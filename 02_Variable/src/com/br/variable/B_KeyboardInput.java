@@ -159,14 +159,8 @@ public class B_KeyboardInput {
 		System.out.println("\n할인율 : " + (int)(discountRate * 100) + "%");
 		System.out.println("\n등급(A~D) : " + grade + "급");
 		
-		
-		
+	
 	}
-	
-	
-	
-	
-	
 	
 	
 }
