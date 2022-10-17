@@ -40,15 +40,19 @@ public class VariablePractice {
 	
 		System.out.print("더하기 결과 : ");
 		System.out.println(number1 + number2);
+		//System.out.println("더하기 결과 : " + (number1 + number2)); 괄호로 묶기
 		
 		System.out.print("빼기 결과 : ");
 		System.out.println(number1 - number2);
+		//System.out.println("빼기 결과 : " + (number1 - number2)); 괄호로 묶기
 		
 		System.out.print("곱하기 결과 : ");
 		System.out.println(number1 * number2);
+		//System.out.println("곱하기 결과 : " + number1 * number2); 
 		
 		System.out.print("나누기 몫 결과 : ");
 		System.out.print(number1 / number2);
+		//System.out.println("곱하기 결과 : " + number1 / number2); int/int = int 10/4 = 2
 		
 		System.out.println("\n");
 		
@@ -58,8 +62,6 @@ public class VariablePractice {
 	public void method3() {
 		
 		Scanner sc = new Scanner(System.in);
-		
-		System.out.println("ex)");
 		
 		System.out.print("가로 : ");
 		double number3 = sc.nextDouble();
@@ -75,7 +77,12 @@ public class VariablePractice {
 		System.out.print("둘레 : ");
 		System.out.println((number3 + number4) * 2);
 		
-		System.out.println("\n");
+		// 면접과 둘레를 각각 구해 각 변수에 담아둔 후 출력하는 방법
+		// double area = number3 * number4;
+		// double perimeter = (number3 + number4);
+		// System.out.println("면적 : " + area);
+		// System.out.println("둘레 : " + perimeter);
+		
 		
 	}
 	
@@ -83,7 +90,6 @@ public class VariablePractice {
 		
 		Scanner sc = new Scanner(System.in);
 		
-		System.out.println("ex)");
 		System.out.print("문자열을 입력하세요 : ");
 		String fruit = sc.nextLine();
 		
@@ -95,6 +101,14 @@ public class VariablePractice {
 		
 		System.out.print("세 번째 문자 : ");
 		System.out.print(fruit.charAt(2));
+		// 문자열로 부터 각 문자값을 뽑아서 각 char 변수에 담아둔 후 출력하는 방법
+		// char ch1 = str.charAt(0);
+		// char ch2 = str.charAt(1);
+		// char ch3 = str.charAt(2);
+		
+		// System.out.println("첫 번째 문자 : " + ch1);
+		// System.out.println("두 번째 문자 : " + ch2);
+		// System.out.println("세 번째 문자 : " + ch3);
 		
 	}
 	
