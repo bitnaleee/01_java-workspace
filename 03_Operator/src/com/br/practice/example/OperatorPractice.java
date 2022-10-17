@@ -14,6 +14,8 @@ public class OperatorPractice {
 		String result = num1 > 0 ? "양수다" : "양수가 아니다";
 		System.out.println(result);
 		
+		//System.out.print(num1 > 0 ? "양수다" : "양수가 아니다");
+		
 		System.out.print("\n");
 		
 	}
@@ -27,6 +29,8 @@ public class OperatorPractice {
 		
 		String result = (num2 > 0 ? "양수다" : (num2 < 0 ? "음수다" : "0이다"));
 		System.out.println(result);
+		
+		//System.out.print(num2 > 0 ? "양수다" : (num2 < 0 ? "음수다" : "0이다"));
 		
 		System.out.print("\n");
 		
@@ -42,6 +46,8 @@ public class OperatorPractice {
 		String result = num3 % 2 == 0 ? "짝수다" : "홀수다";
 		System.out.println(result);
 		
+		//System.out.print(num3 % 2 == 0 ? "짝수다" : "홀수다");
+		
 		System.out.print("\n");
 		
 	}
@@ -55,9 +61,15 @@ public class OperatorPractice {
 		System.out.print("사탕 개수 : " );
 		int num5 = sc.nextInt();
 		
-
+		System.out.print("\n");
+		
+		int result1 = (num5 / num4);
+		int result2 = (num5 % num4);
+		
 		System.out.println("1인당 사탕 개수 : " + result1);
 		System.out.println("남은 사탕 개수 : " + result2);
+		
+		System.out.print("\n");
 		
 	}
 	
@@ -65,35 +77,88 @@ public class OperatorPractice {
 		
 		Scanner sc = new Scanner(System.in);
 		
-		System.out.println("이름 : ");
+		System.out.print("이름 : ");
 		String name = sc.nextLine();
 		
-		System.out.println("학년(숫자만) : ");
-		int group = sc.nextInt();
+		System.out.print("학년(숫자만) : ");
+		int grade = sc.nextInt();
 		
-		System.out.println("반(숫자만) : ");
-		int c = sc.nextInt();
+		System.out.print("반(숫자만) : ");
+		int gradeClass = sc.nextInt();
 		
-		System.out.println("번호(숫자만) : ");
-		int number = sc.nextInt();
+		System.out.print("번호(숫자만) : ");
+		int num = sc.nextInt();
 		
-		System.out.println("성별(M/F) : ");
+		sc.nextLine();
+		
+		System.out.print("성별(M/F) : ");
 		char gender = sc.nextLine().charAt(0);
 		
-		System.out.println("성적(소수점 아래 둘째 자리까지) : ");
-		double grade = sc.nextDouble();
+		System.out.print("성적(소수점 아래 둘째 자리까지) : ");
+		double result = sc.nextDouble();
 		
-		System.out.printf("%d학년 %d반 %d번 %s 여학생의 성적은 %.2f이다.", group, c, number, grade);
-		
-		
-		
+		System.out.println(grade + "학년" + gradeClass + "반" + num + "번" + name + "" 
+		+ (gender == 'M' ? "남학생" : "여학생") + "학생의 성적은 " + result + "이다.");
 		
 		
-		
-		
+		//?맞는지 모르겠다 System.out.printf("%d학년 %d반 %d번 %s %c의 성적은 %.2f이다.",
+				//number1, number2, number3, name, gender, grade);
+	
+		System.out.print("\n");
 		
 	}
 	
+	public void practice6() {
+		
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.print("나이 : ");
+		int age = sc.nextInt();
+		
+		String result = age <= 13 ? "어린이" : (age <= 19 ? "청소년" : "성인");
+		System.out.println(result);
+		
+	}
 	
+	public void practice7() {
+		
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.print("국어 : ");
+		int num1 = sc.nextInt();
+		
+		System.out.print("영어 : ");
+		int num2 = sc.nextInt();	
+				
+		System.out.print("수학 : ");
+		int num3 = sc.nextInt();
+		
+		System.out.print("\n");
+		
+		int sum = num1 + num2 + num3;
+		double average = (sum) / 3.0;
+		
+		System.out.println("합계 : " + (sum));
+		System.out.println("평균 : " + (average));
+		
+		String result = ((num1 >= 40 && num2 >= 40 && num3 >= 40) && average >= 60 ? "합격" : "불합격");
+		System.out.println(result);
+		
+		System.out.print("\n");
+		
+	}
 	
+	public void practice8() {
+		
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.print("주민번호를 입력하세요(- 포함) : ");
+		char idCardNumber = sc.nextLine().charAt(7);
+		
+		System.out.print("\n");
+		
+		System.out.println(idCardNumber % 2 == 0 ? "여자" : "남자");
+		
+	}
+
 }
