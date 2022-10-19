@@ -16,7 +16,7 @@ public class OperatorRun {
 		
 		C_Arithmetic a = new C_Arithmetic();
 		//a.method1();
-		//a.quiz();
+		a.quiz();
 		
 		D_Comparison c = new D_Comparison();
 		//c.method1();
@@ -37,7 +37,7 @@ public class OperatorRun {
 		//t.method5();
 		
 		G_Compound p = new G_Compound();
-		p.method1();
+		//p.method1();
 		
 		
 		
