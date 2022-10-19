@@ -79,11 +79,11 @@ public class VariablePractice {
 		
 		// 면접과 둘레를 각각 구해 각 변수에 담아둔 후 출력하는 방법
 		// double area = number3 * number4;
-		// double perimeter = (number3 + number4);
+		// double perimeter = (number3 + number4) * 2;
 		// System.out.println("면적 : " + area);
 		// System.out.println("둘레 : " + perimeter);
 		
-		
+		System.out.print("\n");
 	}
 	
 	public void method4() {
