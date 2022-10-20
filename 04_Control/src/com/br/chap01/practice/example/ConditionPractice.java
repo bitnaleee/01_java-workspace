@@ -369,4 +369,8 @@ Scanner sc = new Scanner(System.in);
 		
 	}
 	
+	public void 집에서올린메소드() {
+		System.out.print("집에서올린코드");
+	}	
+	
 }
