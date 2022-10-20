@@ -129,15 +129,15 @@ public class ConditionPractice {
 			System.out.println("불합격입니다.");
 		}*/
 		
-		 * if(num1 >= 40 && num2 >= 40 && num3 >= 40 && average >= 60) {
-		 *  System.out.println("국어 : " + num1);
-			System.out.println("수학 : " + num2);
-			System.out.println("영어 : " + num3);
-			System.out.println("합계 : " + sum);
-			System.out.println("평균 : " + average);
-			System.out.println("축하합니다, 합격입니다!");
+		if(num1 >= 40 && num2 >= 40 && num3 >= 40 && average >= 60) {
+		   System.out.println("국어 : " + num1);
+		   System.out.println("수학 : " + num2);
+		   System.out.println("영어 : " + num3);
+		   System.out.println("합계 : " + sum);
+		   System.out.println("평균 : " + average);
+		   System.out.println("축하합니다, 합격입니다!");
 		   } else {
-			System.out.println("불합격입니다.");
+		   System.out.println("불합격입니다.");
 		}
 		
 		
@@ -367,6 +367,10 @@ Scanner sc = new Scanner(System.in);
 			System.out.println("잘못 입력하셨습니다.");
 		}
 		
+	}
+	
+	public void 현재pc에서만든메소드() {
+		System.out.println("새pc에 작성한 코드");
 	}
 	
 }
