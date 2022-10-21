@@ -495,20 +495,16 @@ public class A_For {
 		System.out.print("검색하고 싶은 문자 : ");
 		char ch = sc.nextLine().charAt(0);
 	
-				
 		
+		int count = 0;
+		for(int i=0; i<str.length(); i++) {
 			
-			
-			
-			
+			if(str.charAt(i) == ch) {
+				count++;
+			}
+		}
 		
-	
-		
-		
-		
-		
-		
-		
+			System.out.println("포함된 갯수 : " + count);
 		
 	}
 	

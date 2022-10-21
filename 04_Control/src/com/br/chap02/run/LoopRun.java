@@ -23,9 +23,19 @@ public class LoopRun {
 		//f.method14();
 		//f.method15();
 		//f.method16();
-		f.method17();
+		//f.method17();
+		//f.method18();
 		
-		
+		B_While w = new B_While();
+		//w.method1();
+		//w.method2();
+		//w.method3();
+		//w.method4();
+		//w.method5();
+		//w.method6();
+		//w.method7();
+		//w.method8();*
+		//w.method9();
 		
 	}
 	

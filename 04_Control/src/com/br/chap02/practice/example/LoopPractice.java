@@ -25,54 +25,97 @@ public class LoopPractice {
 	public void practice2() {
 		
 		Scanner sc =  new Scanner(System.in);
-		System.out.print("1이상의 숫자를 입력하세요 : ");
-		int num = sc.nextInt();
 		
-		if(num>=1) {
+		while(true) {
+			System.out.print("1이상의 숫자를 입력하세요 : ");
+			int num = sc.nextInt();
 			
-			for(int i=1; i<=num; i++) {
-				System.out.print(i + " ");
-			} return;
+			if(num>=1) {
+				
+				for(int i=1; i<=num; i++) {
+					System.out.print(i + " ");
+				} 
+				
+				break;
 			
-		} else {
-			System.out.println("잘못 입력하셨습니다. 다시 입력해주세요.");
+			} else {
+					System.out.println("잘못 입력하셨습니다. 다시 입력해주세요.");
+			}
+			
 		}
-
 	}
 	
 	public void practice3() {
-		/*
+	
 		Scanner sc =  new Scanner(System.in);
+		
 		System.out.print("1이상의 숫자를 입력하세요 : ");
 		int num = sc.nextInt();
 		
 		if(num>=1) {
 			
-			for(int i=1; i<=num; i--) {
+			for(int i=num; i > 0; i--) {
 				System.out.print(i + " ");
 			}
 			
 		} else {
 			System.out.println("잘못 입력하셨습니다.");
 		}
+	
+	}
+	
+	public void practice4() {
+		
+		Scanner sc =  new Scanner(System.in);
+		
+		
+		while(true) { 
+			System.out.print("1이상의 숫자를 입력하세요 : ");
+			int num = sc.nextInt();
+		
+			if(num>=1) {
+			
+				for(int i=num; i > 0; i--) {
+					System.out.print(i + " ");
+				}
+			
+				break;
+				
+			} else {
+				System.out.println("잘못 입력하셨습니다. 다시 입력해주세요.");
+			}
+		
+		}
 		
 	}
 	
 	public void practice5() {
 		
-		Scanner sc =  new Scanner(System.in);
+		/*Scanner sc =  new Scanner(System.in);
 		System.out.print("정수를 하나 입력하세요 : ");
 		int num = sc.nextInt();
 		
+		int sum = 0; 
 		for(int i=1; i<=num; i++) {
-		
-		} 
-		
+				
+			
+				
+			System.out.print(i+1);
+			
+			if (i + 1 == num) {
+				System.out.print(" = ");
+			} else {
+				System.out.print(" + ");
+			}
+			
+			System.out.println(sum);
+			
+		}
 		*/
 	}
 	
 	public void practice6() {
-		
+	
 		/*
 		Scanner sc =  new Scanner(System.in);
 		System.out.print("첫 번째 숫자 : ");
