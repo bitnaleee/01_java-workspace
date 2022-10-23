@@ -97,52 +97,55 @@ public class B_Continue {
 		
 	}
 	
-	/*
-	 * public void test2() {
+	public void test2() {
 	 
-		
-	
 		int sum = 0;
-		for(int i=1; i<=100; i++) {
-			sum +=i;
-			if(i % 3 == 0) {
-				break;
+		int count = 0; // 더해진 갯수를 카운팅 하기 위한 변수
+		
+		int i=1;
+		while(i<=100) {
+			
+			if(i % 3 != 0) {
+				sum += i;
+				count++;
 			}
 			
-			System.out.println("1에서부터 100까지의 총 합계 : " + sum);
-		}
-		
-	
+		}	
+			System.out.println("1에서부터 100까지의 총 합계 : " + sum + "\n1에서부터 100까지의 평균 : " + sum / count);
 	}
-	*/
-	
+		
 	public void test3() {
-		
-		// 2단 ~ 5단까지 출력
-		// 단, 홀수단,홀수수만 출력
-		
+	
 		for(int dan=2; dan<=5; dan++) {
 			
 			if(dan % 2 == 0) {
 				continue;
 			}
 			
-			System.out.println("=== " + dan + "단 ===" );
+				System.out.println("=== " + dan + "단 ===" );
 			
-			for(int su=1; su<=9; su++) {
+				for(int su=1; su<=9; su++) {
 			
-				if(su % 2 == 0) {
-					continue;
-				}
-					
-					System.out.printf("%d x %d = %d\n", dan, su, dan*su);
-			
-			}	
+					if(su % 2 == 0) {
+						continue;
+					}
+						System.out.printf("%d x %d = %d\n", dan, su, dan*su);
+				}	
 		}
 		
 	}
 	
-	
-	
-	
+	/*
+		for(int dan=2; dan<=5; dan++) {
+			if(dan % 2 == 1) {
+				for(int su=1; su<=9; su++) {
+					if(su % 2 == 1) {
+						System.out.printf("%d x %d = %d\n", dan, su, dan*su);
+				}
+			}
+			System.out.println();
+		}	
+				
+	}
+	*/
 }
