@@ -182,10 +182,18 @@ public class LoopPractice {
 				for(int i=num2; i<=num; i++)
 					System.out.print(i + " ");
 			}
-			
-			/* 
+			/*  int min=0; int max=0;
+			 *  if(num < num2) {
+			 *  	min = num2;
+			 * 		max = num1;
+			 *  } else {
+			 *  	min = num1;
+			 * 		max = num2;
+			 *  }
+			 // 이 과정을 간단하게 하는 식 
 			  int min = Math.min(num1, num2);	// 두 수 중 작은 값 담기
 			  int max = Math.max(num1, num2); // 두 수 중 큰 값 담기
+			 // min max 밑 빨간줄 컨트롤 누르고 보면 
 				
 			  for(int i = min; i <= max; i++) {
 			  	System.out.print(i + " ");
@@ -317,6 +325,15 @@ public class LoopPractice {
 			
 		}
 		
+		/* 반복 {
+		 * 		1. 연산자 입력받기
+		 * 		>> 사용자가 입력한 연산자가 "exit"일 경우 => "프로그램을 종료합니다." 출력 후 반복문 종료
+		 * 		2. 정수 두 개 입력받기
+		 * 		>> 연산자가 / 거나 % 일 때 두번째 정수값이 0일 경우 => "0으로 나눌 수 없습니다. 다시 입력해주세요." 출력 후 반복문 다시 시작
+		 * 		3. 연산기호에 따라 해당 연산 결과 출력
+		 * }	>> 연산기호가 잘못입력됐을 경우 => "없는 연산자입니다. 다시 입력해주세요." 출력 후 반복문 다시 시작
+		 */
+			
 		
 	}
 	

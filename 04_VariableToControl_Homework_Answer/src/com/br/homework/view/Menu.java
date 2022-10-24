@@ -6,12 +6,11 @@ import com.br.homework.controller.Function;
 
 public class Menu {
 	
-	public void displayMenu() {
-		
+	public void displayMenu(){
 		Scanner sc = new Scanner(System.in);
 		
-		while (true) {
-	
+		while(true) {
+			System.out.println("===== 메인 메뉴 =====");
 			System.out.println("1. 간단 계산기");
 			System.out.println("2. 작은 수에서 큰 수까지 합계");
 			System.out.println("3. 신상 정보 확인");
@@ -21,10 +20,9 @@ public class Menu {
 			System.out.println("7. 구구단");
 			System.out.println("8. 주사위 숫자 알아맞추기 게임");
 			System.out.println("9. 프로그램 종료");
-			System.out.print("메뉴 번호 : ");
+			System.out.print("메뉴 번호 : ");	
 			int menu = sc.nextInt();
 			System.out.println();
-			
 			
 			Function f = new Function();
 			switch(menu) {
@@ -36,51 +34,11 @@ public class Menu {
 			case 6: f.sumRandom(); break;
 			case 7: f.exceptGugu(); break;
 			case 8: f.diceGame(); break;
-			case 9: System.out.println("프로그램을 종료합니다."); return;
+			case 9: System.out.println("종료합니다."); return;
 			default: System.out.println("잘못 입력하셨습니다. 다시 입력해주세요.\n");
 			}
 			
-		} break;
-	}	
-}			
-			/* 내가 푼 것
-			 * if(menu >=1 && menu <=9) {
-			
-					if(menu == 9) {
-						System.out.println("종료합니다.");
-						break;
-					} else if(menu == 1) {
-						method1(); 
-						break;
-					} else if(menu == 2) {
-						method2(); 
-						break;
-					} else if(menu == 3) {
-						method3(); 
-						break;
-					} else if(menu == 4) {
-						method4(); 
-						break;
-					} else if(menu == 5) {
-						method5(); 
-						break;
-					} else if(menu == 6) {
-						method6(); 
-						break;
-					} else if(menu == 7) {
-						method7(); 
-						break;
-					} else if(menu == 8) {
-						method8(); 
-						break;
-					} else {
-					System.out.println("잘못 입력하셨습니다. 다시 입력해주세요.");
-					}
-				}
 		}
-	}*/
+	}
 
-		
-		
-		
-
+}
