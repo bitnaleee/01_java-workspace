@@ -59,6 +59,7 @@ public class A_Array {
 		 * 3. 값 대입 (배열의 특정위치의 방에 값을 대입)	
 		 *    배열명[인덱스] = 값;	
 		 */
+		
 		arr[0] = 0;
 		arr[1] = 1;
 		arr[2] = 2;
@@ -356,6 +357,27 @@ public class A_Array {
 		}
 		// 4. 홀수의 총합 출력
 		System.out.println("홀수들의 총 합 : " + sum);
+	}
+	
+	public void remind() {
+		
+		int[] ages = new int[3];
+		
+		Scanner sc = new Scanner(System.in);
+		for(int i=0; i<ages.length; i++) {
+			System.out.print("나이 입력 : ");
+			ages[i]=sc.nextInt();
+			
+		}
+		int sum = 0;
+		for(int i=0; i<ages.length; i++) {
+			System.out.print(ages[i]);
+			sum +=ages[i];
+		}
+		
+		System.out.println("총 합 : " + sum);
+		System.out.println("평균나이 : " + (double)sum / ages.length);
+	
 	}
 	
 	
