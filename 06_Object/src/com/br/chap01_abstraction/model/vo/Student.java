@@ -1,4 +1,4 @@
-package com.br.chap01_abstraction.run.model.vo;
+package com.br.chap01_abstraction.model.vo;
 
 	/*
 	 * public class 클래스명 {

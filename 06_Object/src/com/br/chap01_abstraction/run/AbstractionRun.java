@@ -1,6 +1,7 @@
+
 package com.br.chap01_abstraction.run;
 
-import com.br.chap01_abstraction.run.model.vo.Student;
+import com.br.chap01_abstraction.model.vo.Student;
 
 public class AbstractionRun {
 	
