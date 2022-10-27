@@ -32,19 +32,24 @@ public class ClassRun {
 		
 		System.out.println("==============================");
 		
-		Product pro = new Product();
+		// 기본생성자로 생성 후 setter메소드를 이용해서 초기화
+		Product p1 = new Product();
 		
-		pro.setpName("아이폰14");
-		pro.setPrice(1300000);
-		pro.setBrand("애플");
+		p1.setpName("아이폰14");
+		p1.setPrice(1300000);
+		p1.setBrand("애플");
 		
-		System.out.println(pro.getpName());
-		System.out.println(pro.getPrice());
-		System.out.println(pro.getBrand());
+		System.out.println(p1.getpName());
+		System.out.println(p1.getPrice());
+		System.out.println(p1.getBrand());
 		
-		System.out.println(pro.information());
+		System.out.println(p1.information());
 		
+		System.out.println("==============================");
 		
+		// 매개변수생성자로 생성과 동시에 초기화
+		Product p2 = new Product("아이폰13", 110000, "애플");
+		System.out.println(p2.information());
 		
 		
 		

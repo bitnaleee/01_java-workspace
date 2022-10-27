@@ -8,6 +8,20 @@ public class Cosmetic {
 	private String category;
 	private String[] ingredient;
 	
+	public Cosmetic() { // 기본생성자 
+		
+	}
+	
+	public Cosmetic(String cName, int price, String brand, String category, String[] ingredient) {
+		this.cName = cName;
+		this.price = price;
+		this.brand = brand;
+		this.category = category;
+		this.ingredient = ingredient;
+		
+	}
+	
+	
 	public void setcName(String cName) {
 		this.cName = cName;
 	}
@@ -49,10 +63,20 @@ public class Cosmetic {
 	}
 	
 	public String information() {
-		return cName + ", " + price + ", " + brand + ", " + category + ", " + ingredient;
+		/*
+		return "이름 : " + cName + ", 가격 : " + price + "원, 브랜드 : "
+		+ brand + ", 카테고리 : " + category + ", 성분 : " + ingredient;
+		ingredient[0] + ", " + ingredient[1] 몇개인지 아는 경우는 이렇게 할 수도 있지만..
+		*/
+		
+		String str = "이름 : " + cName + ", 가격 : " + price + "원, 브랜드 : "
+				+ brand + ", 카테고리 : " + category + ", 성분 : ";
+		for(int i=0; i<ingredient.length; i++) {
+			str += ingredient[i] + " ";
+		}
+		return str;
+	
 	}
-	
-	
 	
 	
 	

@@ -11,6 +11,17 @@ public class Product {
 	private int price;
 	private String brand;
 	
+	// 기본생성자
+	public Product() {
+		
+	}
+	// 매개변수생성자
+	public Product(String pName, int price, String brand) {
+		this.pName = pName;
+		this.price = price;
+		this.brand = brand;
+	}
+	
 	/*
 	public void setPName(String pName) {
 		this.pName = pName;
@@ -41,7 +52,7 @@ public class Product {
 	}
 	
 	public String information() {
-		return pName + ", " + price + ", " + brand;
+		return "pName : " + pName + ", price : " + price + ", brand : " + brand;
 	}
 	
 }
