@@ -11,15 +11,14 @@ package com.br.first;
  */
 
 public class HelloWorld {
-	// 메인메소드 : 프로그램 실행시 제일 먼저 찾아져서 실행되는 메소드
+	
 	public static void main(String[] args) {
-		
+		// 메인메소드 : 프로그램 실행시 제일 먼저 찾아져서 실행되는 메소드
 		
 		// 뭔가를 화면에 출력하고 싶을때 출력문을 통해 작업 (print, println, printf)
 		
 		// System.out.println(출력하고자하는 값); --> 해당 값을 출력 후 "줄바꿈해주는" 역할
 		System.out.println("Hello World!");
-		
 		// System.out.print(출력하고자하는 값); --> 해당 값을 출력만 하고 끝
 		System.out.print("안녕\t하세요\n");
 		// 출력문 내에서 한줄 띄어쓰기 하고자 할 경우 => \n 넣으면됨

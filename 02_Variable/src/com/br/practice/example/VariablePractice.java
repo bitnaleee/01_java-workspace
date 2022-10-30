@@ -22,7 +22,7 @@ public class VariablePractice {
 		System.out.print("키를 입력하세요(cm) : ");
 		double height = sc.nextDouble();
 		
-		System.out.printf("키 %.1f인 %d살 %s자 %s님 반갑습니다^^", height, age, gender, name);
+		System.out.printf("키 %.1f인 %d살 %c자 %s님 반갑습니다^^", height, age, gender, name);
 		
 		System.out.println("\n");
 		
@@ -32,12 +32,30 @@ public class VariablePractice {
 		
 		Scanner sc = new Scanner(System.in);
 		
+		/*
+		System.out.print("첫 번째 정수를 입력하세요 : ");
+		int num1 = sc.nextInt();
+
+		System.out.print("두 번째 정수를 입력하세요 : ");
+		int num2 = sc.nextInt();
+
+		int result1 = num1 + num2;
+		int result2 = num1 - num2;
+		int result3 = num1 * num2;
+		int result4 = num1 / num2;
+
+		System.out.println("더하기 결과 : " + result1);
+		System.out.println("빼기 결과 : " + result2);
+		System.out.println("더하기 결과 : " + result3);
+		System.out.println("더하기 결과 : " + result4);
+		*/
+		
 		System.out.print("첫 번째 정수를 입력하세요 : ");
 		int number1 = sc.nextInt();
 		
 		System.out.print("두 번째 정수를 입력하세요 : ");
 		int number2 = sc.nextInt();
-	
+		
 		System.out.print("더하기 결과 : ");
 		System.out.println(number1 + number2);
 		//System.out.println("더하기 결과 : " + (number1 + number2)); 괄호로 묶기
@@ -62,6 +80,19 @@ public class VariablePractice {
 	public void method3() {
 		
 		Scanner sc = new Scanner(System.in);
+		
+		/*
+		System.out.print("가로 : ");
+		double width = sc.nextDouble();
+
+		System.out.print("세로 : ");
+		double height = sc.nextDouble();
+
+		System.out.println();
+
+		System.out.println("면적 : " + (width * height));
+		System.out.print("둘레 : " + (width + height) * 2);
+		*/
 		
 		System.out.print("가로 : ");
 		double number3 = sc.nextDouble();
@@ -89,6 +120,14 @@ public class VariablePractice {
 	public void method4() {
 		
 		Scanner sc = new Scanner(System.in);
+		/*
+		System.out.print("문자열을 입력하세요 : ");
+		String str = sc.nextLine();
+
+		System.out.println("첫 번째 문자 : " + str.charAt(0));
+		System.out.println("두 번째 문자 : " + str.charAt(1));
+		System.out.println("세 번째 문자 : " + str.charAt(2));
+		*/
 		
 		System.out.print("문자열을 입력하세요 : ");
 		String fruit = sc.nextLine();

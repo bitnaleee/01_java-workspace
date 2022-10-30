@@ -53,8 +53,6 @@ public class B_ValuePrint { // com.br.first.B_ValuePrint
 		System.out.println("7" + 7 + 7);	// "77" + 7 => "777"
 		System.out.println("7" + (7 + 7));	// "7" + 14 => "714"
 		
-		
 	}
-	
 	
 }
