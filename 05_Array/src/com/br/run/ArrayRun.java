@@ -11,7 +11,7 @@ public class ArrayRun {
 		//a.method1();
 		//a.method2();
 		//a.method3();
-		//a.method4();
+		a.method4();
 		//a.method5();
 		//a.method6();
 		//a.method7();
@@ -21,12 +21,13 @@ public class ArrayRun {
 		//a.method11();
 		//a.remind();
 		
+		
 		B_ArrayCopy b = new B_ArrayCopy() ;
 		//b.method1();
 		//b.method2();
 		//b.method3();
 		//b.method4();
-		b.method5();
+		//b.method5();
 		
 		
 		

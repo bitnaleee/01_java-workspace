@@ -18,9 +18,8 @@ public class Product {
 		this.productArea = productArea;
 		this.price = price;
 		this.tax = tax;
-		
 	}
-
+	
 	public String getProductId() {
 		return productId;
 	}
@@ -60,18 +59,8 @@ public class Product {
 	public void setTax(double tax) {
 		this.tax = tax;
 	}
-	
+
 	public String information() {
-		return productId + " " + productName + " " + productArea + " " + price + " " + tax;
+		return productId + "\t" + productName + "\t" + productArea + "\t" + price + "\t" + tax;
 	}
-	
-	public void sum(int price, double tax) {
-		int result =(int)(price + (price * tax));
-		System.out.println("부가세 포함 가격 = " + result + "원");
-	}
-	// 여기서 말고 run에서 getter메소드 이용
-	
-	
-	
-	
 }

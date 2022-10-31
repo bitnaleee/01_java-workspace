@@ -71,15 +71,17 @@ public class A_Array {
 			arr[i] = i;	
 		}
 		
-		//System.out.println(arr[0]);
-		//System.out.println(arr[1]);
-		//...
+		/*
+		System.out.println(arr[0]);
+		System.out.println(arr[1]);
+		...
+		*/
 		
 		for(int i=0; i<5; i++) {
-			System.out.println(arr[i]);
+			System.out.println(arr[0]);
 		}
 		
-		System.out.println(arr); // 실제 arr에는 "주소값"이라는게 담겨있음
+		//System.out.println(arr); // 실제 arr에는 "주소값"이라는게 담겨있음
 	
 	}
 	
@@ -379,7 +381,5 @@ public class A_Array {
 		System.out.println("평균나이 : " + (double)sum / ages.length);
 	
 	}
-	
-	
 	
 }
