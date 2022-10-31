@@ -269,7 +269,7 @@ public class A_Array {
 			arr[i] = sc.nextLine();
 		}
 		// 3. 반복문을 활용해서 각 인덱스에 담긴 값 출력
-		for(int i=0; i<arr.length; i++) { // 왜 안되지
+		for(int i=0; i<arr.length; i++) { 
 			System.out.println(arr[i]);
 		}
 			
@@ -315,9 +315,9 @@ public class A_Array {
 		double[] arr = new double[3];
 		
 		// 2. 각 인덱스에 사용자가 입력한 키 값 대입
-		for(int i=1; i<=arr.length; i++) {
+		for(int i=0; i<arr.length; i++) {
 			System.out.print("키 입력 : ");
-			arr[1] = sc.nextDouble();
+			arr[i] = sc.nextDouble();
 		}
 		// 3. 각 인덱스에 담겨있는 값 출력
 		// 	  1번 학생의 키 : xx.xcm
@@ -329,7 +329,7 @@ public class A_Array {
 			sum +=arr[i];
 		}
 		// 4. 평균키 출력
-			System.out.printf("평균키 : %.2f", sum / arr.length);	
+			System.out.printf("평균키 : %.2fcm", sum / arr.length);	
 	}
 	
 	public void method11() {
@@ -351,14 +351,14 @@ public class A_Array {
 		//    해당 그 인덱스에 담긴 값이 홀수인 값들의 총 합 구하기
 		int sum=0;
 		for(int i=0; i<arr.length; i++) {
-			System.out.println(arr[i]);
+			System.out.print(arr[i] + " ");
 			
 			if(arr[i] % 2 == 1) {
 				sum +=arr[i];
 			}
 		}
 		// 4. 홀수의 총합 출력
-		System.out.println("홀수들의 총 합 : " + sum);
+		System.out.println("\n홀수들의 총 합 : " + sum);
 	}
 	
 	public void remind() {
