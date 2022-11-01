@@ -1,4 +1,4 @@
-package com.br.chap01_oneVSmany.run;
+package com.br.chap02_objectArray.run;
 
 import java.util.Scanner;
 
@@ -47,6 +47,8 @@ public class ArrayForEach {
 		System.out.println("총가격 : " + total + "원");
 		System.out.println("평균가 : " + total / phones.length + "원");
 		
+	// ====================================================================
+		
 		Scanner sc = new Scanner(System.in);
 		
 		System.out.print("구매하고자 하는 핸드폰 : ");
@@ -65,7 +67,7 @@ public class ArrayForEach {
 		}
 		
 		// index를 활용할 수 없다 ex) i+1 번째 핸드폰
-		// int i = 0; i++ +1번째 핸드폰 이렇게 만들 수도 있지만 for loop문으로 쓰는게 낫다 
+		// int i = 0; (i++ +1)번째 핸드폰 이렇게 만들 수도 있지만 for loop문으로 쓰는게 낫다 
 	}
 
 }

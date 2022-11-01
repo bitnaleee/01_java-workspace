@@ -55,8 +55,8 @@ public class ObjectArrayRun {
 	
 	
 	// 도서 제목으로 검색하는 서비스
-	System.out.print("검색할 책 제목 : ");
-	String search = sc.nextLine();
+	//System.out.print("검색할 책 제목 : ");
+	//String search = sc.nextLine();
 	
 	/*
 	boolean flag = true;
@@ -80,7 +80,5 @@ public class ObjectArrayRun {
 	// 향상된 for문으로 
 	
 	
-	
-	}
-	
+
 }

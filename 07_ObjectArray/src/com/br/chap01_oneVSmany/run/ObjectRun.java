@@ -17,6 +17,7 @@ public class ObjectRun {
 		bk.setPrice(10000);
 		bk.setPublisher("구디");
 		*/
+		
 		// 방법2. 매개변수 생성자를 통해서 생성과 동시에 값 초기화
 		//Book bk = new Book("자바의 정석", "홍길동", 10000, "구디");
 		
