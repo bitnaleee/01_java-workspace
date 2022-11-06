@@ -50,9 +50,6 @@ public class C_Arithmetic {
 		System.out.println("h : " + h);
 		System.out.println("i : " + i);
 		
-		
-		
-		
 	}
 
 }

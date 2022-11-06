@@ -7,7 +7,7 @@ public class OperatorRun {
 	public static void main(String[] args) {
 		
 		A_LogicalNegation l = new A_LogicalNegation();
-		l.method1();
+		//l.method1();
 		
 		B_InDecrease i = new B_InDecrease();
 		//i.method1();
@@ -37,7 +37,7 @@ public class OperatorRun {
 		//t.method5();
 		
 		G_Compound p = new G_Compound();
-		//p.method1();
+		p.method1();
 		
 		
 		

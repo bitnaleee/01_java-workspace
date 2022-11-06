@@ -96,7 +96,8 @@ public class F_Triple {
 		char op = sc.nextLine().charAt(0);
 		
 		String result = ( op == '+' ? num1 + num2 + "" : (op == '-' ? num1 - num2 + "" : "잘못입력했습니다." ));
-		
+		// 돌려줄 자료형이 일치해야되는데 int int String 
+		// String에 담고 숫자를 문자열로 바꾼다 > 문자열 덧셈연산
 		
 		// xx x xx = xx형식
 		System.out.printf("%d %c %d = %s", num1, op, num2, result);

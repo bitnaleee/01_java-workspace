@@ -19,10 +19,10 @@ public class ConditionRun {
 		
 		B_Switch s = new B_Switch();
 		//s.method1();
-		s.method2();
+		//s.method2();
 		//s.method3();
 		//s.method4();
-		//s.method5();
+		s.method5();
 		
 	}
 	

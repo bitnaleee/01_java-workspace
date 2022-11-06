@@ -202,7 +202,7 @@ public class A_If {
 		System.out.println(name + "님은 " + result + "입니다.");
 		
 		// 초기화가 된 변수만 출력 가능!
-		// 위쪽 조건들이 다 false일 경우 result에 아무런 값도 대딥되지 않음
+		// 위쪽 조건들이 다 false일 경우 result에 아무런 값도 대답되지 않음
 		// 해결 => result변수 미리 세팅시 초기화를 해두자!
 		
 	}
