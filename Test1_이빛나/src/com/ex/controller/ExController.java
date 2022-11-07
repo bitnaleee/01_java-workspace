@@ -73,7 +73,7 @@ public class ExController {
 		int grade3 = sc.nextInt();
 		
 		int sum = (grade1 + grade2 + grade3);
-		double average = (sum / 3);
+		double average = (sum / 3.0);
 		
 		System.out.println("세 점수의 합계 : " + sum);
 		System.out.println("세 점수의 평균 : " + average);
@@ -86,18 +86,19 @@ public class ExController {
 		
 		Scanner sc = new Scanner(System.in);
 		
-		String result = "";
-		
 		System.out.print("종료하시려면 y를 입력해주세요 : ");
 		char ch = sc.nextLine().charAt(0);
 		
+		System.out.println(ch == 'y' || ch == 'Y' ? "프로그램을 종료합니다." : "프로그램을 계속 진행합니다.");
+		
+		/*
 		if(ch == 'y' || ch == 'Y') {
 			System.out.print("프로그램을 종료합니다.");
 		} else {
 			System.out.print("프로그램을 계속 진행합니다.");
 		} 
 		return;
-		
+		*/
 		
 		
 	}
@@ -144,8 +145,6 @@ public class ExController {
 		
 		System.out.print("+ 또는 - 또는 * 을 입력해주세요 : ");
 		char ch = sc.nextLine().charAt(0);
-		
-		String result = "";
 		
 		if(ch == '+' || ch == '-' || ch == '*') {
 			

@@ -7,6 +7,7 @@ public class ConditionPractice {
 	public void practice1() {
 		
 		// 내가 품 if-else if문
+		/*
 		Scanner sc = new Scanner(System.in);
 		
 		System.out.println("1. 입력");
@@ -31,16 +32,17 @@ public class ConditionPractice {
 		} else {
 			System.out.print("잘못입력하셨습니다.");
 		}
-		
-		/* switch문 
+		*/
+		/*
+		//switch문 
 		Scanner sc = new Scanner(System.in);
 		String menu = ("1. 입력\n" + "2. 수정\n" + "3. 조회\n"
 		+ "4. 삭제\n" + "9. 종료\n" + "메뉴 번호를 입력하세요 : ");
 		
 		System.out.print(menu);
-		int menu = sc.nextInt();
+		int num = sc.nextInt();
 		
-		switch(menu) {
+		switch(num) {
 		case 1 : System.out.println("입력 메뉴입니다."); break;
 		case 2 : System.out.println("수정 메뉴입니다."); break;
 		case 3 : System.out.println("조회 메뉴입니다."); break;
@@ -50,16 +52,18 @@ public class ConditionPractice {
 		}
 		*/
 		
-		/*switch문인데 String 변수 이용하는 방법
-		 * Scanner sc = new Scanner(System.in);
-		 *	System.out.println("1. 입력");
-			System.out.println("2. 수정");
-			System.out.println("3. 조회");
-			System.out.println("4. 삭제");
-			System.out.println("9. 종료");
+		// switch문인데 String 변수 이용하는 방법
 		
-		   System.out.print("메뉴 번호를 입력하세요 : ");
-		   int menu = sc.nextInt();
+		Scanner sc = new Scanner(System.in);
+			
+		  System.out.println("1. 입력");
+		  System.out.println("2. 수정");
+		  System.out.println("3. 조회");
+		  System.out.println("4. 삭제");
+		  System.out.println("9. 종료");
+		
+		  System.out.print("메뉴 번호를 입력하세요 : ");
+		  int menu = sc.nextInt();
 		  
 		   String str = "";
 		   switch(menu) {
@@ -71,8 +75,7 @@ public class ConditionPractice {
 		   default : System.out.println("잘못입력하셨습니다."); return;
 		   }
 	  	  System.out.println(str + " 메뉴입니다.");
-		 */
-		
+		 
 	}
 	
 	public void practice2() {
@@ -144,11 +147,10 @@ public class ConditionPractice {
 	}
 	
 	public void practice4() {
-		
-		/* 내가 품 틀림
-		 * Scanner sc = new Scanner(System.in);
+		/*
+		 내가 품 틀림
+			Scanner sc = new Scanner(System.in);
 		 
-		
 			System.out.print("1~12 사이의 정수 입력 : ");
 			int month = sc.nextInt();
 	
@@ -177,6 +179,7 @@ public class ConditionPractice {
 		default: System.out.println(num + "월은 잘못 입력된 달입니다."); break;
 		
 		*/
+		
 		// String 변수 사용해서 출력문은 한번만 
 		Scanner sc = new Scanner(System.in);
 		
@@ -193,6 +196,7 @@ public class ConditionPractice {
 		default : season = "잘못 입력된 달"; break;
 		}
 		System.out.println(num + "월은 " + season + "입니다.");
+		
 	}
 		
 		
@@ -210,9 +214,9 @@ public class ConditionPractice {
 		
 		if(userId.equals(id) && userPw.equals(pw)) {
 			System.out.print("로그인 성공");
-			} else if(userPw.equals(pw)) {
+		} else if(userPw.equals(pw)) {
 			System.out.print("아이디가 틀렸습니다.");
-			} else if(userId.equals(id)) {
+		} else if(userId.equals(id)) {
 			System.out.print("비밀번호가 틀렸습니다.");
 		} else {
 			System.out.print("둘 다 틀렸습니다.");
@@ -233,11 +237,12 @@ public class ConditionPractice {
 		case "비회원": System.out.println("게시글 조회"); break;
 		default : System.out.println("잘못입력하셨습니다.");
 		}
+		
 	}
 	
 	public void practice7() {
 		
-Scanner sc = new Scanner(System.in);
+		Scanner sc = new Scanner(System.in);
 		
 		System.out.print("키(m)를 입력해주세요 : ");
 		double height = sc.nextDouble();
@@ -249,11 +254,11 @@ Scanner sc = new Scanner(System.in);
 		
 		if(bmi < 18.5) {
 			System.out.println("저체중");
-			}else if(bmi < 23) {
+		}else if(bmi < 23) {
 			System.out.println("정상체중");
-			}else if(bmi < 25) {
+		}else if(bmi < 25) {
 			System.out.println("과체중");
-			}else if(bmi < 30) {
+		}else if(bmi < 30) {
 			System.out.println("비만");
 		}else {	
 			System.out.println("고도비만");
