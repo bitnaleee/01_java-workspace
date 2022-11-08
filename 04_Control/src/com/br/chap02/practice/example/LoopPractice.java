@@ -139,11 +139,11 @@ public class LoopPractice {
 		} else {
 			System.out.print("1이상의 숫자만을 입력해주세요");
 		}
-
+		
 	}
 	/*
 	   1) 두 수를 가지고 최소값, 최대값을 알아내야됨!!
-	   int min = 0; // 두 수중에 작은 값을 기록하기 위한 변수
+	   		int min = 0; // 두 수중에 작은 값을 기록하기 위한 변수
 			int max = 0; // 두 수중에 큰 값을 기록하기 위한 변수
 			if(num1 > num2) {
 				max = num1;
@@ -211,14 +211,15 @@ public class LoopPractice {
 		
 		Scanner sc =  new Scanner(System.in);
 		
-		System.out.print("숫자 : ");
-		int num = sc.nextInt();
+			System.out.print("숫자 : ");
+			int num = sc.nextInt();
 		
 			System.out.println("===== " + num + "단 =====");
-			for(int i=1; i<=9; i++) {
-			System.out.printf("%d * %d = %d\n", num, i, num*i);
-			}
-			
+		
+				for(int i=1; i<=9; i++) {
+					System.out.printf("%d * %d = %d\n", num, i, num*i);
+				}
+		
 	}
 	
 	public void practice9() {
