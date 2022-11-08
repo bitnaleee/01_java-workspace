@@ -14,7 +14,7 @@ public class B_While {
 	 * while(조건식) { // 반복을 수행시킬 조건 
 	 * 		반복적으로 실행할 코드;
 	 * 		[증감식;]
-	 * 
+	 * }
 	 */
 	
 	public void method1() {
@@ -100,7 +100,7 @@ public class B_While {
 		
 		int i=0;
 		while(i < str.length()) {
-			System.out.println(str.charAt(i++));
+			System.out.print(str.charAt(i++));
 		}
 	}
 	
@@ -167,7 +167,7 @@ public class B_While {
 		int i = 1;
 		do {
 			sum += i++;
-		} while(i<num);
+		} while(i<=num);
 		
 		System.out.println("총 합계 : " + sum);
 		
@@ -189,8 +189,5 @@ public class B_While {
 			} while(!str.equals("exit"));
 		
 	}
-	
-	
-	
 	
 }

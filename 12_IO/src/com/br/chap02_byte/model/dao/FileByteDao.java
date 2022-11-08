@@ -16,7 +16,7 @@ public class FileByteDao {
 	 *  
 	 * XXXInputStream : XXX매체로부터 데이터를 입력받을 수 있는 통로
 	 * XXXOutputStream : XXX매체로 데이터를 출력시킬 수 있는 통로
-	 * 
+	 * 00000000000000000000000
 	 */
 	
 	// 프로그램 --> 외부매체(파일) (출력)

@@ -112,8 +112,7 @@ public class A_For {
 		 * 방법2.10회 반복문 돌리되 출력은 홀수만 
 		 * 1에서부터 10까지 매번 1씩 증가되는동안 반복 수행 (1 2 3 4 ... 8 9 10) => 10회 반복
 		 */
-		 for(int i=1; i<=10;
-				 i++) {
+		 for(int i=1; i<=10; i++) {
 			 if(i % 2 == 1) { // i값이 홀수일 경우
 			 System.out.print(i + " ");
 			 }
@@ -332,7 +331,7 @@ public class A_For {
 		// 2~9사이의 랜덤값 발생 시켜
 		// 해당 단 출력하기
 		
-		int random = (int)(Math.random() *8 + 2);
+		int random = (int)(Math.random() * 8 + 2);
 		System.out.println("2~9사이의 랜덤값 : " + random);
 		
 		if(random >= 2 && random <= 9) {
@@ -439,6 +438,7 @@ public class A_For {
 			for(int su=1; su<=9; su++) {
 				System.out.printf("%d x %d = %d\n", dan, su, dan*su);
 			}
+			
 			System.out.println();
 		}
 		
@@ -457,9 +457,9 @@ public class A_For {
 		 * 
 		 * ex) 4 입력시  -->  박수박수 출력
 		 */
-		
+		/*
 		Scanner sc = new Scanner(System.in);
-		System.out.print("한 개의 정수를 입력 : ");
+		System.out.print("정수 : ");
 		int num = sc.nextInt();
 		
 		if(num > 0) { // 양수일 경우 => 잘 입력
@@ -477,6 +477,27 @@ public class A_For {
 		} else { // 양수가 아닐 경우 => 잘못입력
 			System.out.println("양수가 아닙니다.");
 		}
+		*/
+		
+		Scanner sc = new Scanner(System.in);
+
+		System.out.print("정수 : ");
+		int num = sc.nextInt();
+
+		if(num>0) {
+		
+			for(int i=1; i<num; i++) {
+
+				if(i%2 == 1) {
+					System.out.print("박");
+				} else {
+					System.out.print("수");
+				}
+			}
+
+		} else { 
+				System.out.println("양수가 아닙니다.");
+		}
 		
 	}
 	
@@ -489,6 +510,7 @@ public class A_For {
 		 * 
 		 * ex) "banana", 'a' 입력시  -->  3 출력
 		 */
+		
 		Scanner sc = new Scanner(System.in);
 		System.out.print("문자열 : ");
 		String str = sc.nextLine();
@@ -504,10 +526,9 @@ public class A_For {
 			}
 		}
 		
-			System.out.println("포함된 갯수 : " + count);
+		System.out.println("포함된 갯수 : " + count);
 		
 	}
-	
 	
 	
 }
