@@ -17,7 +17,6 @@ public class B_Continue {
 		
 		for(int i=1; i<=10; i++) {
 			
-			
 			// i 값이 짝수일 경우 뒤의 출력문 실행 안되도록 바로 다음 반복문이 실행
 			if(i % 2 == 0) {
 				continue;	// 밑코드는 실행되지않고 반복문 위로 올라감

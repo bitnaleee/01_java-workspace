@@ -366,18 +366,19 @@ public class A_Array {
 		int[] ages = new int[3];
 		
 		Scanner sc = new Scanner(System.in);
-		for(int i=0; i<ages.length; i++) {
-			System.out.print("나이 입력 : ");
-			ages[i]=sc.nextInt();
+		
+			for(int i=0; i<ages.length; i++) {
+				System.out.print("나이 입력 : ");
+				ages[i]=sc.nextInt();
 			
-		}
+			}
 		int sum = 0;
 		for(int i=0; i<ages.length; i++) {
-			System.out.print(ages[i]);
+			System.out.print(ages[i] + " ");
 			sum +=ages[i];
 		}
 		
-		System.out.println("총 합 : " + sum);
+		System.out.println("\n총 합 : " + sum);
 		System.out.println("평균나이 : " + (double)sum / ages.length);
 	
 	}

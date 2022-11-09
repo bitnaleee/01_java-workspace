@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Function {
 
 	public void calculator() {
-		
+	
 		Scanner sc = new Scanner(System.in);
 		
 		System.out.print("첫 번째 정수 : ");
@@ -13,23 +13,24 @@ public class Function {
 		System.out.print("두 번째 정수 : ");
 		int num2 = sc.nextInt();
 		sc.nextLine();
-		
 		System.out.print("연산자(+, -, x, /) : ");
 		char ch = sc.nextLine().charAt(0);
-		
-		if(sc.nextLine().equals('/') && num2 == 0) {
-			System.out.println("0으로 나눌수 없습니다. 다시입력해주세요.\n");
-		}// break;
-		
-		int result = 0;
-		switch(ch) {
+
+		int result = 0; // 결과 보관할 변수
+		switch (ch) {
 		case '+': result = num1 + num2; break;
 		case '-': result = num1 - num2; break;
-	//	case ('x' || 'X'): result = num1 * num2; break;
-		case '/': result = num1 / num2; break;
-		default : System.out.println("없는 연산자입니다. 다시입력해주세요.\n");
-	}		
-		System.out.printf("%d %s %d = %d\n\n", num1, ch, num2, result);
+		case 'x': case 'X': result = num1 * num2; break;
+		case '/':
+			if(num2 == 0) {
+				System.out.print("0으로 나눌 수 없습니다.\n");
+			} else {
+				result = num1 / num2;
+			}
+		}
+		
+		System.out.printf("%d %c %d = %d\n\n", num1, ch, num2, result);
+	
 	}
 	
 	public void totalCalculator() {
@@ -41,7 +42,6 @@ public class Function {
 		System.out.print("두 번째 정수 : ");
 		int num2 = sc.nextInt();
 		
-		
 		int min = Math.min(num1, num2);
 		int max	= Math.max(num1, num2);
 		
@@ -50,7 +50,7 @@ public class Function {
 			sum +=i;
 		} 
 		
-		System.out.printf("%d부터 %d까지 정수들의 합 : %d", min, max, sum);
+		System.out.printf("%d부터 %d까지 정수들의 합 : %d\n\n", min, max, sum);
 	
 	}
 	
@@ -66,11 +66,12 @@ public class Function {
 		System.out.print("성별 : ");
 		String gender = sc.nextLine();
 		System.out.print("성격 : ");
-		String nature = sc.nextLine();
+		String personality = sc.nextLine();
+		
 		System.out.println("이름 : " + name);
 		System.out.println("나이 : " + age);
 		System.out.println("성별 : " + gender);
-		System.out.println("성격 : " + nature);
+		System.out.println("성격 : " + personality + "\n");
 		
 	}
 	
@@ -81,34 +82,39 @@ public class Function {
 		System.out.print("이름 : ");
 		String name = sc.nextLine();
 		System.out.print("학년 : ");
-		int year = sc.nextInt();
-		sc.nextLine();
-		
+		int grade = sc.nextInt();
 		System.out.print("반 : ");
-		int group = sc.nextInt();
+		int classNum = sc.nextInt();
 		System.out.print("번 : ");
 		int num = sc.nextInt();
 		sc.nextLine();
-		
 		System.out.print("성별(M/F) : ");
 		char gender = sc.nextLine().charAt(0);
 		System.out.print("성적 : ");
-		double grade = sc.nextDouble();
+		double score = sc.nextDouble();
 		
-		if(grade>=90) {
-			System.out.print("A");
-		} else if (grade>=80) {
-			System.out.print("B");
-		} else if (grade>=70) {
-			System.out.print("C");
-		} else if (grade>=60) {
-			System.out.print("D");
+		char result = 'F';
+
+		if (score >= 90) {
+			result = 'A';
+		} else if (score >= 80) {
+			result = 'B';			
+		} else if (score >= 70) {
+			result = 'C';
+		} else if (score >= 60) {
+			result = 'D';
+		} 
+		
+		String student = "";
+		if (gender == 'M') {
+			student = "남학생";
 		} else {
-			System.out.print("F");
+			student = "여학생";
 		}
 		
-		System.out.printf("%d학년 %d반 %d번 %c학생 %s의 점수는 %.2f이고 학점입니다.", year, group, num, gender, name, grade);
-		
+		System.out.printf("%d학년 %d반 %d번 %s %s의 점수는 %.2f이고 %c학점입니다.\n\n", 
+				grade, classNum, num, student, name, score, result);
+
 	}
 	
 	public void printStarNumber() {
@@ -118,69 +124,91 @@ public class Function {
 		System.out.print("정수 : ");
 		int num = sc.nextInt();
 		
-		while(true) {
-			if(num>0) {
-				for(int i=1; i<=num; i++) {
-					for(int j=1; j<=num; j++) {
-						
-						if(j==num) {
-							System.out.print(num);
-						} else {
-							System.out.print("*");
-						}
-					}
+		if(num>0) {
+				
+			for(int i=1; i<=num; i++) {
+				for(int j=1; j<=i; j++) {
+					System.out.print("*");
 				}
-			} else {
-				System.out.print("양수가 아닙니다.");
+				System.out.println(i);
 			}
-		
+			
+		} else {
+			System.out.println("양수가 아닙니다.");
 		}
+		
+		System.out.println();
 		
 	}
 	
 	public void sumRandom() {
 		
+		int random = (int)(Math.random() * 100 + 1);
+		
 		int sum = 0;
-		while(true) {
-			int random = (int)(Math.random() * 100 + 1);
-			sum +=random;
-			System.out.print("1부터 " + random + "까지의 합 : " + sum);
-			break;
-		} 
+		for (int i=1; i<=random; i++) {
+			sum += i;
+		}
+		
+		System.out.printf("1부터 %d까지의 합 : %d\n\n", random, sum);
+		
 	}
 	
 	public void exceptGugu() {
-		/*
+		
 		Scanner sc = new Scanner(System.in);
 		
 		System.out.print("정수 : ");
-		int num = sc.nextInt();
+		int dan = sc.nextInt();
 		
-		if(num>0) {
-			
-			for(int i=num; i<=num; i++) {
-				break;
-				for(int j=1; j<=9; j++) {
-					
-					if(j % num == 0) {
-						break;
-					} else {
-						System.out.printf("%d * %d = %d", i, j, i*j);
-					}	
-				}	
+		if(dan > 0) {
+			for(int su=1 ; su<=9 ; su++) {
+				if(su % dan != 0) {
+					System.out.println(dan + " * " + su + " = " + dan*su);
+				}
 			}
-	}
-	*/
+			
+		}else {
+			System.out.println("양수가 아닙니다.");
+		}
+		
+		System.out.println();
 	
 	}
 	
 	public void diceGame() {
 		
+		Scanner sc = new Scanner(System.in);
 		
-		
-		
+		while(true) {
+			
+			int num1 = (int)(Math.random() * 6 + 1);
+			int num2 = (int)(Math.random() * 6 + 1);
+			int sum = num1 + num2;
+			
+			while(true) {
+				System.out.print("주사위 두개의 합을 맞춰보세요(2~12입력) : ");
+				int user = sc.nextInt();
+				
+				if(sum == user) {
+					System.out.println("정답입니다.");
+					break;
+				}else {
+					System.out.println("틀렸습니다.");
+				}
+			}
+			
+			sc.nextLine();
+			System.out.println("주사위의 합 : " + sum);
+			System.out.print("계속 하시겠습니까?(y/n) : ");
+			
+			if(sc.nextLine().equalsIgnoreCase("n")){ // equalsIgnoreCase() : 대소문자 가리지 않고 동등비교
+				System.out.println("종료합니다.\n");
+				break;
+			}
+			
+		}
 	}
-	
-	
-	
+
 }
+

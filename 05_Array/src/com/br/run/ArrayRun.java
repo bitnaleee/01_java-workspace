@@ -18,8 +18,8 @@ public class ArrayRun {
 		//a.method8();
 		//a.method9();
 		//a.method10();
-		a.method11();
-		//a.remind();
+		//a.method11();
+		a.remind();
 		
 		
 		B_ArrayCopy b = new B_ArrayCopy() ;

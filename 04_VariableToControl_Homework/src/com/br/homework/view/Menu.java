@@ -40,7 +40,7 @@ public class Menu {
 			default: System.out.println("잘못 입력하셨습니다. 다시 입력해주세요.\n");
 			}
 			
-		} break;
+		} 
 	}	
 }			
 			/* 내가 푼 것

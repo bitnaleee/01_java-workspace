@@ -1,6 +1,7 @@
 package com.br.chap01_list.part01_basic.run;
 
 import java.util.ArrayList;
+import java.util.List;
 
 import com.br.chap01_list.part01_basic.model.vo.Music;
 
@@ -58,7 +59,8 @@ public class ListRun {
 		
 		// ArrayList 이용
 
-		ArrayList list = new ArrayList(3);	// 크기지정할 수도 있고 안할 수도 있음
+		// 별도로 제네릭 설정을 하지 않으면 <Object> => E == Object
+		ArrayList/*<Object>*/list = new ArrayList(3);	// 크기지정할 수도 있고 안할 수도 있음
 		
 		System.out.println(list);	// 안에 아무것도 없음! (비어있는 상태) []
 		
@@ -103,6 +105,32 @@ public class ListRun {
 		System.out.println(s);
 		System.out.println(list.get(1));	// 대입하는거라 강제형변환할 필요x
 		System.out.println(((Music)list.get(1)).getTitle());
+		
+		// 7. subList (int index1, int index2) : List => 기존의 리스트에서 일부 추출해서 새로운 list로 변환, 몇번 인덱스에서 몇번 인덱스까지 추출할 것인지
+		List sub = list.subList(0, 2); // 0 <=2
+		System.out.println(sub);
+		
+		// 8. addAll(Collection c) : 컬렉션을 통채로 뒤에 추가시켜주는 메소드
+		list.addAll(sub); 
+		System.out.println(list);
+		
+		// 9. isEmpty() : boolean => 컬렉션이 비어있는지 묻는 메소드
+		System.out.println(list.isEmpty());
+		
+		// 10. clear() : 싹비워주는 메소드
+		list.clear();
+		System.out.println(list);
+		System.out.println(list.isEmpty());
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
 		
 	}
 
