@@ -51,24 +51,22 @@ public class BookMenu {
 		 * 5. bc(BookController)의 insertBook메소드 호출하면서 위의 내용들 전달
 		 */
 		
-		// 위의 순서대로 작성해보세용 ~ 찡긋^^
-		
-		System.out.println("\n *** 새로운 도서 추가 ***");
-		
+		// 1번 ~ 4번 과정
 		System.out.print("도서명 : ");
 		String title = sc.nextLine();
 		System.out.print("저자명 : ");
 		String author = sc.nextLine();
-		System.out.print("장르(1.인문 / 2.자연과학 / 3.의료 / 4.기타) : ");
+		System.out.print("장르번호(1.인문 / 2.자연과학 / 3.의료 / 4.기타) : ");
 		int category = sc.nextInt();
 		System.out.print("가격 : ");
 		int price = sc.nextInt();
 		
+		// 5번 과정
 		bc.insertBook(title, author, category, price);
 		
 		System.out.println("성공적으로 추가되었습니다.");
-		
 	}
+	
 	
 	// 2. 도서 전체용 view 메소드
 	public void selectList() {
@@ -82,22 +80,19 @@ public class BookMenu {
 		 * 
 		 */
 		
-		// 위의 순서대로 작성해보세요 ~ 화이팅^^
-		
-		System.out.println("\n *** 전체 도서 리스트 ***");
-		
+		// 1번 과정
 		ArrayList<Book> bookList = bc.selectList();
 		
+		// 2번 과정
 		if(bookList.isEmpty()) {
 			System.out.println("존재하는 도서가 없습니다.");
-		} else {
+		}else {
 			for(int i=0; i<bookList.size(); i++) {
-				System.out.println(bookList.get(i));
+				System.out.println(bookList.get(i));				
 			}
-			
 		}
-		
 	}
+	
 	
 	// 3. 도서 검색용 view 메소드
 	public void searchBook() {
@@ -115,22 +110,21 @@ public class BookMenu {
 		 * 
 		 */
 		
-		// 위의 순서대로 작성해보세요 ~ 얼마 안남았어요~!!
-		
-		System.out.print("검색 키워드 : ");
+		// 1번 과정
+		System.out.print("검색할 도서명 키워드 : ");
 		String keyword = sc.nextLine();
 		
+		// 2번 과정
 		ArrayList<Book> searchList = bc.searchBook(keyword);
 		
-		System.out.println("\n *** 검색 결과 ***");
+		// 3번 과정
 		if(searchList.isEmpty()) {
 			System.out.println("검색 결과가 없습니다.");
-		} else {
+		}else {
 			for(int i=0; i<searchList.size(); i++) {
 				System.out.println(searchList.get(i));
 			}
 		}
-		
 	}
 	
 	
@@ -153,23 +147,21 @@ public class BookMenu {
 		 *  
 		 */
 		
-		// 위의 순서대로 작성해보세요 ~ 이제 거의 끝났어요~!!
-		
-		System.out.println("\n *** 특정 도서 삭제 ***");
-		
+		// 1번 ~ 2번 과정
 		System.out.print("삭제할 도서명 : ");
 		String title = sc.nextLine();
 		System.out.print("삭제할 저자명 : ");
 		String author = sc.nextLine();
 		
+		// 3번 과정
 		int result = bc.deleteBook(title, author);
 		
-		if(result>1) {
+		// 4번 과정
+		if(result == 1) {
 			System.out.println("성공적으로 삭제되었습니다.");
-		} else {
+		}else {
 			System.out.println("삭제할 도서를 찾지 못했습니다.");
 		}
-		
 	}
 	
 
