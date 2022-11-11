@@ -4,7 +4,6 @@ import java.util.ArrayList;
 
 import com.ex.model.vo.Product;
 
-
 public class ExController {
 	
 	// 제품들을 보관할 ArrayList 
@@ -13,8 +12,7 @@ public class ExController {
 	{
 		list.add(new Product("키보드", "레오폴드", 150000));
 		list.add(new Product("게이밍마우스", "로지텍", 90000));
-		list.add(new Product("게이밍모니터", "LG", 300000));				
-						
+		list.add(new Product("게이밍모니터", "LG", 300000));
 	}
 	
 	/**
@@ -22,10 +20,8 @@ public class ExController {
 	 * @return 제품들이 담겨있는 ArrayList
 	 */
 	public ArrayList<Product> selectProduct(){
-	
 		// 제품 리스트를 반환시키기
 		return list; // 우선 이렇게 써놓겠음 (수정해야됨)
-		
 	}
 	
 	/**
@@ -38,9 +34,7 @@ public class ExController {
 		
 		// 전달받은 제품명, 브랜드명, 가격을 가지고 새로운 Product객체 생성 후 list에 추가시키기
 		// 이때 전달받은 가격은 현재 문자열이기 때문에 숫자로 변환시키는 작업을 우선 해야됨
-		
 		int intPrice = Integer.parseInt(price);
-		
 		Product p = new Product(name, brand, intPrice);
 		
 		list.add(p);
@@ -61,20 +55,17 @@ public class ExController {
 		int result = 0;
 		for(int i=0; i<list.size(); i++) {
 			
-			Product p = list.get(i);
+			Product p = list.get(i);  
 			
 			if(p.getName().equals(name) && p.getBrand().equals(brand)) {
-				
 				list.remove(i);
 				result = 1;
-				break;
-				
+				break; 
 			}
 			
 		}
 		
-		return result;	// 우선 이렇게 써놓겠음 (수정해야됨)
-		
+		return result; // 우선 이렇게 써놓겠음 (수정해야됨)
 	}
 	
 	/**
@@ -88,17 +79,14 @@ public class ExController {
 		// list에 담긴 모든 Product객체들의 제품명과 비교시
 		// 해당 제품의 제품명에 전달받은 키워드가 "포함"되어 있을 경우
 		// 해당 Product객체를 위의 검색결과를 담기 위해 생성한 ArrayList에 담기 
-		
-		// 해당 검색결과가 담긴 ArrayList 반환 
-		
 		ArrayList<Product> searchList = new ArrayList<>();
-		
 		for(int i=0; i<list.size(); i++) {
 			if(list.get(i).getName().contains(nameKeyword)) {
 				searchList.add(list.get(i));
 			}
+			
 		}
-		
+		// 해당 검색결과가 담긴 ArrayList 반환 
 		return searchList; // 우선 이렇게 써놓겠음 (수정해야됨)
 	}
 	
@@ -111,29 +99,23 @@ public class ExController {
 	public int selectPrice(String name, String brand) {
 		
 		// 검색된 제품의 가격을 보관시킬 변수 초기화 시켜두기 (우선은 0으로)
-		
+		int result2 = 0;
+		int price = 0;
 		// list에 담긴 모든 Product객체들의 제품명, 브랜드명과
 		// 전달받은 제품명과 브랜드명이 둘다 "일치"하는 제품을 찾아 해당 제품의 가격값을 위의 변수에 대입하기
-		
+		for(int i=0; i<list.size(); i++) {
+			
+			Product p = list.get(i); 
+			
+			if(p.getName().equals(name) && p.getBrand().equals(brand)) {
+				price = p.getPrice();
+				result2 = 1;
+				break; 
+			}
+			
+		}
 		// 가격이 담겨있는 변수값 반환
-		
-		int aaaa = 0;
-		/*
-		 * 
-		 * 
-		 * 
-		 */
-		
-		
-		
-		
-		return aaaa; // 우선 이렇게 써놓겠음 (수정해야됨)
-		
-		
-		
+		return price; // 우선 이렇게 써놓겠음 (수정해야됨)
 	}
 	
-	
-	
-
 }
