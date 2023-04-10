@@ -12,8 +12,8 @@ package com.br.first;
 
 public class HelloWorld {
 	
+	// 메인메소드 : 프로그램 실행시 제일 먼저 찾아져서 실행되는 메소드
 	public static void main(String[] args) {
-		// 메인메소드 : 프로그램 실행시 제일 먼저 찾아져서 실행되는 메소드
 		
 		// 뭔가를 화면에 출력하고 싶을때 출력문을 통해 작업 (print, println, printf)
 		
