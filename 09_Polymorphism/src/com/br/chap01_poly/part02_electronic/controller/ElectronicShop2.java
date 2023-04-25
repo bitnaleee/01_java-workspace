@@ -8,7 +8,7 @@ public class ElectronicShop2 {
 	private Electronic[] elec = new Electronic[3];
 	private int count = 0;
 	
-	public void insert(Electronic any) {
+	public void insert(Electronic any) { // 부모타입 매개객체(자식타입 3개를 받을 수 있음)
 		elec[count++] = any;
 		//count++;
 	}

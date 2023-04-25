@@ -1,8 +1,8 @@
-package com.br.chap02_abstracktAndInterface.part01_abstract.run;
+package com.br.chap02_abstractAndInterface.part01_abstract.run;
 
-import com.br.chap02_abstracktAndInterface.part01_abstract.model.vo.BasketBall;
-import com.br.chap02_abstracktAndInterface.part01_abstract.model.vo.FootBall;
-import com.br.chap02_abstracktAndInterface.part01_abstract.model.vo.Sports;
+import com.br.chap02_abstractAndInterface.part01_abstract.model.vo.BasketBall;
+import com.br.chap02_abstractAndInterface.part01_abstract.model.vo.FootBall;
+import com.br.chap02_abstractAndInterface.part01_abstract.model.vo.Sports;
 
 public class abstractRun {
 
@@ -48,10 +48,6 @@ public class abstractRun {
 		 *      => 표준화됨
 		 *  
 		 */
-		
-		
-		
-		
 		
 	}
 	

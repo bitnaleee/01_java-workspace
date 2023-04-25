@@ -13,7 +13,7 @@ public class Tablet extends Electronic {
 		this.penFlag = penFlag;
 	}
 
-	public boolean isPenFlag() {
+	public boolean isPenFlag() { // boolean > is
 		return penFlag;
 	}
 

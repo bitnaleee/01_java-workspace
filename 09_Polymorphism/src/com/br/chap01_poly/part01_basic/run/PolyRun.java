@@ -12,6 +12,7 @@ public class PolyRun {
 		
 		System.out.println("1. 부모타입 레퍼런스로 부모객체를 다루는 경우");
 		Parent p1 = new Parent();
+		// 부모타입	// 부모객체
 		p1.printParent();
 		// p1 레퍼런스로 Parent에만 접근 가능
 		
@@ -53,8 +54,8 @@ public class PolyRun {
 		
 		// 다형성을 적용하기 전
 		// Child1 객체 2개와 Child2 객체 2개를 관리
-		Child1[] arr1 = new Child1[2];
-		arr1[0] = new Child1(1, 2, 4);
+		Child1[] arr1 = new Child1[2]; // 배열 생성
+		arr1[0] = new Child1(1, 2, 4); // 배열 객체 대입
 		arr1[1] = new Child1(2, 1, 5);
 		
 		Child2[] arr2 = new Child2[2];
@@ -65,7 +66,7 @@ public class PolyRun {
 		// 다형성을 적용한 후
 		Parent[] arr = new Parent[4];
 		
-		// Parent
+		// Parent // 객체 관리하기 쉬움
 		arr[0] = new Child1(1, 2, 4);
 		arr[1] = new Child2(2, 3, 5);
 		arr[2] = new Child2(5, 7, 2);
@@ -73,7 +74,7 @@ public class PolyRun {
 		
 		System.out.println("=========================");
 		
-		((Child1)arr[0]).printChild1();
+		((Child1)arr[0]).printChild1(); 
 		((Child2)arr[1]).printChild2();
 		//((Child1)arr[2]).printChild1(); // java.lang.ClassCastException : 부적절한 클래스형변환시
 		((Child2)arr[2]).printChild2();

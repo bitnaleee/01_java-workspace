@@ -5,9 +5,7 @@ public class Parent {
 	private int x;
 	private int y;
 	
-	public Parent() {
-		
-	}
+	public Parent() {}
 	
 	public Parent(int x, int y) {
 		this.x = x;

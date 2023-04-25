@@ -6,7 +6,7 @@ public class Book /*extends Object*/ {
 	private String author;
 	private int price;
 	
-	// 기본생성자, 매매변수생성자
+	// 기본생성자, 매개변수생성자
 	public Book() {
 		
 	}
@@ -64,7 +64,6 @@ public class Book /*extends Object*/ {
 	 *   
 	 */
 	
-	
 	@Override
 	public String toString() { // Object클래스의 toString메소드 오버라이딩
 		return "title : " + title + ", author : " + author + ", price : " + price;
@@ -84,7 +83,7 @@ public class Book /*extends Object*/ {
 		Book other = (Book)obj;
 		
 		// 		this   vs	other
-		if(title.equals(other.title) && author.equals(other.author) && price == other.price) {
+		if(/*this.*/title.equals(other.title) && author.equals(other.author) && price == other.price) {
 			return true;
 		} else {
 			return false;

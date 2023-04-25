@@ -12,6 +12,7 @@ public class ElectronicShop1 {	// 오버로딩 적용
 	private NoteBook note;
 	private Tablet tab;
 
+	// 오버로딩 적용된건 매개변수가 다르기 때문
 	public void insert(Desktop d) {	// Desktop d = new Desktop(~~~~) 
 		desk = d;
 	}
@@ -23,6 +24,8 @@ public class ElectronicShop1 {	// 오버로딩 적용
 	public void insert(Tablet t) {
 		tab = t;
 	}
+	
+	
 	
 	public Desktop selectDesktop() {
 		return desk;

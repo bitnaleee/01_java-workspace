@@ -1,5 +1,6 @@
-package com.br.chap02_abstracktAndInterface.part02_Interface.model.vo;
+package com.br.chap02_abstractAndInterface.part02_Interface.model.vo;
 
+//abstract클래스일경우 오버라이딩X
 public class Mother extends Person implements Basic {
 	
 	private String babyBirth;	// 출산|입양|없음

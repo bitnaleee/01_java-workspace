@@ -8,9 +8,7 @@ public class Desktop extends Product {
 	
 	private boolean allInOne;
 	
-	public Desktop() {
-		
-	}
+	public Desktop() {}
 	
 	public Desktop(String brand, String pCode, String pName, int price, boolean allInOne) {
 		// brand ~ price 네 개의 값들은 부모클래스(Product)의 필드에 대입

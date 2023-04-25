@@ -61,7 +61,7 @@ public class Desktop {
 	}
 	
 	public String information() {
-		return brand + ", " + pCode + ", " + pName + ", " + price + ", " + allInOne;
+		return "brand :" + brand + ", " + "pCode : " + pCode + ", " + "pName : " + pName + ", " + "price : " + price + ", " + "allInOne : " + allInOne;
 	}
 	
 	

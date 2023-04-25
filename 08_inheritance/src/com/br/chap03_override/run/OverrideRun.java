@@ -15,16 +15,17 @@ public class OverrideRun {
 		// 내부적으로 JVM이 자동으로 해당 레퍼런스.toString() 메소드 호출해서 이때 돌아온 결과 출력
 		
 		// 오버라이딩 전 : Object클래스의 toString() 실행 => "자료형(풀클래스명) + @ + 주소값의16진수" 반환
+		//com.br.chap03_override.model.vo.Book@66a5d4e9
 		// 오버라이딩 후 : Book클래스의 toString() 실행 => 해당 객체가 가지고 있는 모든 필드값들을 한 문자열로 합쳐 반환
 		
 		//----------------------------------------------------------------------------------------
 		
 		Book bk3 = new Book("수학의 정석", "나수학", 100); // bk1과 동일한 필드값을 가진 bk3
 		
-		System.out.println("bk1과 bk3가 같은 책입니까? : " + (bk1 == bk3));
+		System.out.println("bk1과 bk3가 같은 책입니까? : " + (bk1 == bk3)); //false
 		// 기본자료형간에 동등비교시에는 == 연산자 이용
 		// 참조자료형(레퍼런스)간에 동등비교시에는 equals메소드 이용
-		System.out.println("bk1과 bk3가 같은 책입니까? : " + bk1.equals(bk3));
+		System.out.println("bk1과 bk3가 같은 책입니까? : " + bk1.equals(bk3)); // false(주소값)
 		
 		// 오버라이딩 전 : Object클래스의 equals() 메소드 실행 => 두 주소값을 동등비교해서 반환
 		// 오버라이딩 후 : Book클래스의 equals() 메소드 실행  => 두 객체의 주소값 비교가 아닌 실제 "필드값"들이 다 같으면 true반환

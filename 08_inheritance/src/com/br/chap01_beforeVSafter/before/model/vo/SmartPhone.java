@@ -62,7 +62,7 @@ public class SmartPhone {
 	}
 
 	public String information() {
-		return brand + ", " + pCode + ", " + pName + ", " + price + ", " + mobileAgency;
+		return "brand :" + brand + ", " + "pCode : " + pCode + ", " + "pName : " + pName + ", " + "price : " + price + ", " + "mobileAgency : " + mobileAgency;
 	}
 	
 	

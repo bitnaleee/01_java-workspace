@@ -8,6 +8,7 @@ public class AfterRun {
 	
 	public static void main(String[] args) {
 		
+		// 매개변수 생성자
 		Desktop d = new Desktop("삼성", "d-01", "짱짱데스크탑", 2000000, true);
 		Tv t = new Tv("엘지", "t-01", "겁나얇은티비", 3500000, 65);
 		SmartPhone s = new SmartPhone("애플", "s-01", "아이뽄", 1300000, "KT");

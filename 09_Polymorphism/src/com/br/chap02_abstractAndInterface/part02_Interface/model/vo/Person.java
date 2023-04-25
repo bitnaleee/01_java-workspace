@@ -1,4 +1,4 @@
-package com.br.chap02_abstracktAndInterface.part02_Interface.model.vo;
+package com.br.chap02_abstractAndInterface.part02_Interface.model.vo;
 
 public abstract class Person {
 	

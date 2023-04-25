@@ -8,7 +8,7 @@ public class InheritRun {
 
 	public static void main(String[] args) {
 		
-		Car c = new Car("벤틀리", 12.5, "세단", 4);
+		Car c = new Car("벤틀리", 12.5, "세단", 4); // 매개변수 생성자
 		Airplane a = new Airplane("비행기", 0.1, "제트기", 10, 4);
 		Ship s = new Ship("낚시배", 3, "어선", 1);
 
@@ -16,13 +16,13 @@ public class InheritRun {
 		System.out.println(a.information());
 		System.out.println(s.information());
 		
-		
 		s.setName("화물선");
 		s.setKind("선박");
 		
 		System.out.println(s.information());
 		
-		Car c1 = new Car();
+		Car c1 = new Car(); // 기본생성자
+		// 부모객체인 Vehicle 자리 먼저 생성 => 부모클래스의 기본생성자가 반드시 있어야함
 		
 		/*
 		 * * 상속의 특징

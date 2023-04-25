@@ -61,7 +61,7 @@ public class Tv {
 	}
 	
 	public String information() {
-		return brand + ", " + pCode + ", " + pName + ", " + price + ", " + inch;
+		return "brand :" + brand + ", " + "pCode : " + pCode + ", " + "pName : " + pName + ", " + "price : " + price + ", " + "inch : " + inch;
 	}
 	
 	

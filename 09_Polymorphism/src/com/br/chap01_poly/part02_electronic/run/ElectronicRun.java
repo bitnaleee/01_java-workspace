@@ -11,6 +11,7 @@ public class ElectronicRun {
 
 	// 실행용 클래스는 납품업체라고 생각
 	public static void main(String[] args) {
+		
 		/*
 		// 1. 다형성 적용안했을 경우 (ElectronicShop1)
 		ElectronicShop1 es = new ElectronicShop1();
@@ -38,7 +39,7 @@ public class ElectronicRun {
 		es.insert(new Tablet("Apple", "아이패드", 800000, false));
 		
 		// 조회
-		Desktop d = (Desktop)es.select(0);	// Downcasting
+		Desktop d = (Desktop)es.select(0);	// DownCasting
 		NoteBook n = (NoteBook)es.select(1);
 		Tablet t = (Tablet)es.select(2);
 		
