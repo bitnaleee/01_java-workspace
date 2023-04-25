@@ -7,7 +7,7 @@ public class OverloadingTest {
 		
 	}
 	
-	/*
+	/* 하나만 정의 되어야함
 	public void test() {
 	
 	}
@@ -29,24 +29,23 @@ public class OverloadingTest {
 		
 	}
 	
-	/*
+	/* "매개변수명과는 상관없이" 매개변수의 자료형의 갯수와 순서가 다르게 작성되어야함
 	public void test(int c, int d) {
 		
 	}
 	*/
-	// "매개변수명과는 상관없이" 매개변수의 자료형의 갯수와 순서가 다르게 작성되어야함
 	
 	public void test(String str) {
 		
 	}
 	
-	/*
+	/* 반환형도 상관없음 x
 	public int test(String str) {
 		return 0;
 	}
 	*/
 	
-	/*
+	/* 접근제한자도 상관없음 x
 	protected void test(String str) {
 		
 	}

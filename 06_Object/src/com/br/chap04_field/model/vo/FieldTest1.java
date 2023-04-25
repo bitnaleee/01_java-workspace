@@ -20,33 +20,31 @@ package com.br.chap04_field.model.vo;
  * 
  */
 
-
-
-
-
 public class FieldTest1 {	// 클래스영역 시작
 	
 	private int global;
-
+	
 	public void test(int num) {	// 메소드영역 시작
 		// 매개변수 == 지역변수
 		
 		int local = 100;
 		
-		// 멤버변수 => 이 객체 생성시 JVM이 기본값이라도 초기화
-		System.out.println(global);
+		// 멤버변수 => 이 객체 생성시 JVM이 기본값이라도 초기화해줌
+		System.out.println(global); // 0
 		
-		// 매개변수 => 이 메소드 호출시 반드시 값이 전달되어 올꺼기 때문에 초기화
-		System.out.println(num);
+		// 매개변수 => 이 메소드 호출시 반드시 값이 전달되어 올꺼기 때문에 초기화 
+		System.out.println(num); // 10
 		
-		// 지역변수 => 내가 초기화를 직접하지 않으면 텅 빈 상태
-		System.out.println(local);
+		// 지역변수 => ***내가 초기화를 직접하지 않으면 텅 빈 상태
+		System.out.println(local); // 100
+		
+		
 		
 		FieldTest2 ft2 = new FieldTest2();
 		
 		System.out.println(ft2.pub);
-		System.out.println(ft2.pro);
-		System.out.println(ft2.def);
+		System.out.println(ft2.pro); // 같은패키지
+		System.out.println(ft2.def); // 같은패키지
 		//System.out.println(ft2.pri);
 		
 		

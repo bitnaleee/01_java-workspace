@@ -7,7 +7,7 @@ public class A_If {
 	/*
 	 *  선택적으로 실행하는 선택문 --> 조건문
 	 *  반복적으로 실행하는 반복문 --> 반복문
-	 *  그 외의 흐름 제어 	     --> 분기문
+	 *  그 외의 흐름 제어 	   --> 분기문
 	 *  
 	 *  * 조건문
 	 *    "조건식"을 통해 참이냐 거짓이냐를 판단해서
@@ -50,7 +50,7 @@ public class A_If {
 		}
 		
 		if(num <= 0) {
-		System.out.println("양수가 아니다.");
+			System.out.println("양수가 아니다.");
 		}
 	}
 	
@@ -120,6 +120,16 @@ public class A_If {
 		System.out.print("정수 :");
 		int num = sc.nextInt();
 		
+		/*
+		if(num % 2 == 0 ) {
+			System.out.println("입력한 숫자는 0입니다.");
+		} else if(num % 2 == 1) {
+			System.out.println("입력한 숫자는 홀수입니다.");
+		} else if(num == 0) {
+			System.out.println("입력한 숫자는 짝수입니다.");
+		}
+		*/
+		
 		if(num == 0) {
 			System.out.println("입력한 숫자는 0입니다.");
 		} else if(num % 2 == 1) {
@@ -143,7 +153,7 @@ public class A_If {
 		
 		/*if(age <= 13) {
 			System.out.println("어린이");
-		} else if(age <= 19) { //age > 13 인건 이미 내제되어있음
+		} else if(age > 13 && age <= 19) { //age > 13 인건 이미 내제되어있음
 			System.out.println("청소년");
 		} else {
 			System.out.println("성인");
@@ -156,7 +166,7 @@ public class A_If {
 		// 조건검사
 		if(age <= 13) {
 			result = "어린이";
-		} else if(age <= 19) { //age > 13 인건 이미 내제되어있음
+		} else if(age <= 19) { 
 			result = "청소년";
 		} else {
 			result = "성인";
@@ -195,7 +205,7 @@ public class A_If {
 			result = "남학생";
 		} else {
 			System.out.println("성별을 잘못 입력하셨습니다.");
-			return; // 해당 메소드를 빠져나가고 싶을 때 
+			return; // 해당 메소드를 빠져나가고 싶을 때 (뒤 코드는 실행되지않음)
 		}
 		
 		// xxx님은 xxx입니다.

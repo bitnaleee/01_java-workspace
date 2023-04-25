@@ -16,7 +16,7 @@ public class MethodRun {
 		test1.method1();
 		
 		//String str = test1.method2();
-		//System.out.println(str);
+		//System.out.println(str); // 안녕하세요
 		System.out.println(test1.method2());
 		
 		test1.method3(10,5);
@@ -24,7 +24,7 @@ public class MethodRun {
 		
 		char ch = test1.method4("pineapple", 3);
 		System.out.println(ch);
-		// System.out.println(test1.method4("pineapple", 3));
+		System.out.println(test1.method4("pineapple", 3));
 		
 		//=================================================
 		
@@ -40,8 +40,8 @@ public class MethodRun {
 		} else {
 			System.out.println("부적절한 정수를 입력했습니다.");
 		}
-		
 		*/
+		
 		
 		
 		MethodTest2.method1();

@@ -187,7 +187,7 @@ public class B_While {
 			// xxx의 글자수는 xx글자입니다.
 			System.out.println(str + "의 글자수는 " + str.length() + "글자입니다.");
 			} while(!str.equals("exit"));
-		
+			
 	}
 	
 }

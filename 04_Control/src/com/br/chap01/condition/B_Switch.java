@@ -70,7 +70,6 @@ public class B_Switch {
 		case "바나나" : price = 2000; break;
 		case "복숭아" : price = 3000; break;
 		default : System.out.println(fruit + "은(는) 판매하는 과일이 아닙니다."); return; // 메소드 자체를 빠져나감
-		
 		}
 		
 		// xx의 가격은 xxxxx원입니다.

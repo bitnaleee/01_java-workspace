@@ -95,7 +95,6 @@ public class D_Cast {
 		double result3 = iNum + dNum;
 		System.out.println("result3 : " + result3);
 		
-		
 	}
 	
 	

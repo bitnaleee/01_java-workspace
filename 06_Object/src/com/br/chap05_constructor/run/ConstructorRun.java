@@ -8,7 +8,7 @@ public class ConstructorRun {
 	public static void main(String[] args) {
 		
 		User u1 = new User();
-		System.out.println(u1.information());
+		System.out.println(u1.information()); // 초기값 넣어져있음
 		
 		// 1. 기본생성자로 생성 후 setter메소드를 이용하여 값 초기화
 		/*

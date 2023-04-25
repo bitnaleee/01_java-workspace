@@ -94,7 +94,7 @@ public class E_Logical {
 		 *  		false && true	=> false
 		 *  		false && false	=> false
 		 *  
-		 *  	>> && 연산자를 기준으로 앞의 결과가 false일 경우 뒤쪽의 조건검사는 궂이 실행되지 않음!!!
+		 *  	>> && 연산자를 기준으로 앞의 결과가 false일 경우 뒤쪽의 조건검사는 굳이 실행되지 않음!!!
 		 *  
 		 *  || (OR) : 두 개의 조건 중 하나라도 true일 경우 결과값이 true임 (~이거나, 또는)
 		 *  		

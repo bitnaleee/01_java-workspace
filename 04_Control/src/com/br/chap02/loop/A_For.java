@@ -394,7 +394,7 @@ public class A_For {
 		//			=> 			  그게 아닐 경우 => * 출력
 		
 		for(int i=1; i<=4; i++) {
-		
+			
 			for(int j=1; j<=4; j++) {
 				
 				if(i == j) {
@@ -407,7 +407,7 @@ public class A_For {
 		}
 		
 	}
-	
+		
 	public void method16() {
 		
 		// 2단~9단까지 싹 다 출력
@@ -429,7 +429,6 @@ public class A_For {
 		 */
 		// 2~9단까지 매번 1씩 증가 => 바깥쪽
 		// 한 단이 고정일때 매번 곱해지는 수는 1~9까지 1씩 증가 => 안쪽 
-		
 		
 		for(int dan=2; dan<=9; dan++) {
 			
@@ -457,47 +456,27 @@ public class A_For {
 		 * 
 		 * ex) 4 입력시  -->  박수박수 출력
 		 */
-		/*
+		
 		Scanner sc = new Scanner(System.in);
 		System.out.print("정수 : ");
 		int num = sc.nextInt();
 		
-		if(num > 0) { // 양수일 경우 => 잘 입력
+		if(num > 0) {
 			
-				for(int i=1; i<=num; i++) {
+			for(int i=1; i<=num; i++) {
 				
-					if(i % 2 == 1 ) {
-						System.out.print("박"); 
-					} else {
-						System.out.print("수");
-					}
-				
-				}
-			
-		} else { // 양수가 아닐 경우 => 잘못입력
-			System.out.println("양수가 아닙니다.");
-		}
-		*/
-		
-		Scanner sc = new Scanner(System.in);
-
-		System.out.print("정수 : ");
-		int num = sc.nextInt();
-
-		if(num>0) {
-		
-			for(int i=1; i<num; i++) {
-
-				if(i%2 == 1) {
+				if(i % 2 == 1) {
 					System.out.print("박");
 				} else {
 					System.out.print("수");
 				}
+				
 			}
-
-		} else { 
-				System.out.println("양수가 아닙니다.");
+			
+		} else {
+			System.out.println("양수가 아닙니다.");
 		}
+		
 		
 	}
 	
@@ -514,9 +493,9 @@ public class A_For {
 		Scanner sc = new Scanner(System.in);
 		System.out.print("문자열 : ");
 		String str = sc.nextLine();
+		
 		System.out.print("검색하고 싶은 문자 : ");
 		char ch = sc.nextLine().charAt(0);
-	
 		
 		int count = 0;
 		for(int i=0; i<str.length(); i++) {
@@ -524,11 +503,11 @@ public class A_For {
 			if(str.charAt(i) == ch) {
 				count++;
 			}
+			
 		}
 		
 		System.out.println("포함된 갯수 : " + count);
 		
 	}
-	
 	
 }

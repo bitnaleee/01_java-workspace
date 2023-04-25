@@ -90,7 +90,6 @@ public class B_ArrayCopy {
 		// System.out.arraycopy(원본배열명, 복사시작할인덱스, 복사본배열명, 복사본배열의복사될시작인덱스, 복사할갯수);
 		System.arraycopy(origin, 2, copy, 5, 3);
 		
-		
 		for(int i=0; i<copy.length; i++) {
 			System.out.print(copy[i] + " ");
 		}

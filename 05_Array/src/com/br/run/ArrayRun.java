@@ -19,7 +19,7 @@ public class ArrayRun {
 		//a.method9();
 		//a.method10();
 		//a.method11();
-		a.remind();
+		//a.remind();
 		
 		
 		B_ArrayCopy b = new B_ArrayCopy() ;

@@ -151,8 +151,6 @@ public class A_Variable {
 		// * 한글을 쓸 수 있지만 쓰지말자
 		String 이름;
 		
-		
-		
 	}
 	
 	

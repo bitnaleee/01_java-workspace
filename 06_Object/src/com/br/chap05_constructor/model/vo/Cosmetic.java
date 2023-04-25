@@ -65,8 +65,8 @@ public class Cosmetic {
 	public String information() {
 		/*
 		return "이름 : " + cName + ", 가격 : " + price + "원, 브랜드 : "
-		+ brand + ", 카테고리 : " + category + ", 성분 : " + ingredient;
-		ingredient[0] + ", " + ingredient[1] 몇개인지 아는 경우는 이렇게 할 수도 있지만..
+		+ brand + ", 카테고리 : " + category + ", 성분 : " + 
+		ingredient[0] + ", " + ingredient[1]; 몇개인지 아는 경우는 이렇게 할 수도 있지만..
 		*/
 		
 		String str = "이름 : " + cName + ", 가격 : " + price + "원, 브랜드 : "

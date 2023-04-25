@@ -9,6 +9,7 @@ package com.br.chap01_abstraction.model.vo;
 	 * 
 	 * 		// 메소드부
 	 * 		public void method1() {
+	 * 
 	 * 		}
 	 * }
 	 * 
@@ -24,8 +25,4 @@ public class Student {
 	public int age;
 	public double height;
 	
-	
-	
-	
-
 }

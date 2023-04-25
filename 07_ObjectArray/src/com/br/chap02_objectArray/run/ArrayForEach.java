@@ -30,9 +30,9 @@ public class ArrayForEach {
 			System.out.println(value);
 		}
 		
-		Phone[] phones = new Phone[3];
+		Phone[] phones = new Phone[3]; // Phone배열생성
 		
-		phones[0] = new Phone("아이폰", "애플", 1400000, "14프로");
+		phones[0] = new Phone("아이폰", "애플", 1400000, "14프로"); //Phone객체생성
 		phones[1] = new Phone("갤럭시", "삼성", 1200000, "노트20");
 		phones[2] = new Phone("벨벳폰", "엘지", 900000, "1");
 		phones[2].setSeries("없음");
@@ -68,6 +68,6 @@ public class ArrayForEach {
 		
 		// index를 활용할 수 없다 ex) i+1 번째 핸드폰
 		// int i = 0; (i++ +1)번째 핸드폰 이렇게 만들 수도 있지만 for loop문으로 쓰는게 낫다 
-	}
+	} 
 
 }

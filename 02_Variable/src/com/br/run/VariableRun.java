@@ -25,7 +25,7 @@ public class VariableRun {
 		
 		D_Cast d = new D_Cast();
 		//d.autoCasting();
-		d.forceCasting();
+		//d.forceCasting();
 		
 		
 		

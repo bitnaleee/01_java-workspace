@@ -6,7 +6,7 @@ public class EncapsulationRun {
 
 	public static void main(String[] args) {
 		
-		Student hong = new Student();
+		Student hong = new Student(); // import할 때 chap2로
 		
 		/*
 		hong.name = "홍길동";
@@ -46,9 +46,6 @@ public class EncapsulationRun {
 		 *   2) setter/getter메소드
 		 *		setter메소드 : 해당 필드에 대입시키고자하는 값 전달받아 대입시켜주는 기능    
 		 *		getter메소드 : 해당 필드에 담긴 값을 반환시켜주는 기능 (조회)
-		 * 
-		 *   
-		 * 
 		 * 
 		 */
 		

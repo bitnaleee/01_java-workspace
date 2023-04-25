@@ -25,7 +25,6 @@ public class Menu {
 			int menu = sc.nextInt();
 			System.out.println();
 			
-			
 			Function f = new Function();
 			switch(menu) {
 			case 1: f.calculator(); break;

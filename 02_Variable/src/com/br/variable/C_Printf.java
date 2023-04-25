@@ -25,7 +25,7 @@ public class C_Printf {
 		
 		// 10, 20
 		
-		System.out.println(iNum1 + ", " + iNum2);
+		System.out.println(iNum1 + ", " + iNum2 + "%");
 		System.out.printf("%d, %d\n", iNum1, iNum2);
 		
 		// 10, 20%
@@ -33,7 +33,7 @@ public class C_Printf {
 		System.out.printf("%d, %d%%\n", iNum1, iNum2);
 		
 		System.out.printf("%d\n", iNum1, iNum2);	// 에러발생x 첫번째값만 출력
-		//System.out.printf("%d %d\n", iNum1);	// 에러발생
+		//System.out.printf("%d %d\n", iNum1);	// 에러발생 (모자라게쓰면 안됨)
 		
 		System.out.printf("%5d\n", iNum1);	// 5칸의 공간 확보 후 오른쪽정렬(음수면 왼쪽) 가독성을 위해
 		System.out.printf("%5d\n", 250);
@@ -50,10 +50,6 @@ public class C_Printf {
 		String str = "Hello";
 		
 		System.out.printf("%c %s %C %S\n", ch, str, ch, str);
-		
-		
-		
-		
 		
 	}
 	

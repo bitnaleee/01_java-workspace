@@ -39,6 +39,7 @@ public class MethodTest1 {
 	//    문자열과 정수값을 전달 받아서 해당 문자열의 정수인덱스의 문자 뽑아서 반환
 	public char method4(String str, int index) {
 		System.out.println("매개변수와 반환값 둘 다 있는 메소드입니다.");
+		
 		/*
 		if(index >= 0 && index < str.length()) {
 			return str.charAt(index);
@@ -49,13 +50,5 @@ public class MethodTest1 {
 		return str.charAt(index);
 		
 	}
-	
-	
-	
-	
-	
-	
-	
-	
 	
 }

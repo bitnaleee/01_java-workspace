@@ -5,6 +5,12 @@ import java.util.Scanner;
 public class Function {
 
 	public void calculator() {
+		
+		/*
+		 * 정수 두 개와 연산자 하나를 키보드로 입력 받아 두 정수는 int변수에, 연산자는 char에 저장
+		 * 연산문자가 +이면 두 정수의 합 계산, -이면 두 정수의 차 계산, x 또는 X이면 두 정수의 곱, /이면서 나누는 수(두번째 수)가 0이면 "0으로 나눌 수 없습니다." 
+		 * 출력하고 결과 값은 0으로 처리
+		 */
 	
 		Scanner sc = new Scanner(System.in);
 		
@@ -35,6 +41,11 @@ public class Function {
 	
 	public void totalCalculator() {
 		
+		/*
+		 * 키보드로 정수 두 개를 입력 받아 두 정수 중 작은 값을 시작 값으로 큰 값을 종료 값으로 사용
+		 * 작은 값에서 큰 값까지 정수 합계를 구함
+		 */
+		
 		Scanner sc = new Scanner(System.in);
 		
 		System.out.print("첫 번째 정수 : ");
@@ -56,6 +67,10 @@ public class Function {
 	
 	public void printProfile() {
 		
+		/*
+		 * 신상 정보들을 자료형에 맞춰 변수에 기록하고 변수에 기록된 값 출력
+		 */
+		
 		Scanner sc = new Scanner(System.in);
 		
 		System.out.print("이름 : ");
@@ -76,6 +91,11 @@ public class Function {
 	}
 	
 	public void printScore() {
+		
+		/*
+		 * 키보드로 입력 받은 값들을 변수에 기록하여 변수 값을 화면에 출력
+		 * 점수가 90점 이상이면 A학점, 80이상 90미만이면 B, 70점이상 80미만이면 C, 60이상 70미만 D, 60미만 F학점을 매김
+		 */
 		
 		Scanner sc = new Scanner(System.in);
 		
@@ -119,6 +139,10 @@ public class Function {
 	
 	public void printStarNumber() {
 		
+		/*
+		 * 정수를 하나 입력받아 그 수가 양수일 때만 입력된 수를 줄 수로 적용하여 아래와 같이 출력
+		 */
+		
 		Scanner sc = new Scanner(System.in);
 		
 		System.out.print("정수 : ");
@@ -127,7 +151,7 @@ public class Function {
 		if(num>0) {
 				
 			for(int i=1; i<=num; i++) {
-				for(int j=1; j<=i; j++) {
+				for(int j=1; j<i; j++) {
 					System.out.print("*");
 				}
 				System.out.println(i);
@@ -143,6 +167,10 @@ public class Function {
 	
 	public void sumRandom() {
 		
+		/*
+		 * 1부터 100사이의 정수 중 임의의 정수를 하나 발생시켜 1부터 랜덤 수까지의 합계 출력
+		 */
+		
 		int random = (int)(Math.random() * 100 + 1);
 		
 		int sum = 0;
@@ -155,6 +183,11 @@ public class Function {
 	}
 	
 	public void exceptGugu() {
+		
+		/*
+		 * 정수를 하나 입력 받아 그 수가 양수일 때만 그 수의 구구단 출력
+		 * 단 곱하기 수가 입력 받은 단의 배수일 경우 출력 제외
+		 */
 		
 		Scanner sc = new Scanner(System.in);
 		
@@ -177,6 +210,14 @@ public class Function {
 	}
 	
 	public void diceGame() {
+		
+		/*
+		 * 두 개의 주사위가 만들어낼 수 있는 모든 경우의 수를 랜덤으로 정하고
+		 * 랜덤으로 정해진 두 주사위 눈의 합이 입력된 수와 같은 경우 "맞췄습니다" 출력,
+		 * 입력 값과 다르면 "틀렸습니다" 출력하여 맞출 때까지 반복
+		 * 값을 맞추면 "계속 하시겠습니까(y/n): "가 출력되고
+		 * 'y'또는'Y' 입력시 새로운 랜덤 수가 정해지고 처음부터 다시 시작, 'n' 또는 'N' 입력시 종료
+		 */
 		
 		Scanner sc = new Scanner(System.in);
 		

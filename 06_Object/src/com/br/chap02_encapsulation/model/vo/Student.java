@@ -18,7 +18,6 @@ public class Student {
 	private int korScore;
 	private int mathScore;
 	
-	
 	/*
 	 * 2. 생성자부
 	 * 	  객체를 생성하기 위한 일종의 메소드
@@ -43,10 +42,11 @@ public class Student {
 	// - setter 메소드
 	// 해당 필드에 대입시키고자 하는 값 전달받아
 	// 해당 필드에 대입시켜주는 기능의 메소드
+	
 	/*
 	public void setName(String newName) { // String newName = "홍길동";
 		// 매개변수 : 해당 메소드 호출시 전달값을 받아주기 위한 변수
-		name = a;
+		name = newName;
 	}
 	*/
 	

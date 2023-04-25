@@ -19,6 +19,4 @@ public class FieldTest3 {
 	public static final String STAFIN = "static final";
 	// 상수는 선언 + 초기값도 함께
 	
-	
-	
 }

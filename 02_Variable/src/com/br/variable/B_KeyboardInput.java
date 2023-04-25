@@ -31,7 +31,6 @@ public class B_KeyboardInput {
 		// xxx님은 xx살이며, 키는 xxx.xcm입니다.
 		System.out.println(name + "님은 " + age + "살이며, 키는 " + height + "cm입니다.");
 
-		
 	}
 	
 	public void inputScanner2() {

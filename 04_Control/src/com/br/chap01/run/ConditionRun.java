@@ -22,7 +22,7 @@ public class ConditionRun {
 		//s.method2();
 		//s.method3();
 		//s.method4();
-		s.method5();
+		//s.method5();
 		
 	}
 	

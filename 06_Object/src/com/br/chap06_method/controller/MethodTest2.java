@@ -18,7 +18,7 @@ public class MethodTest2 {
 			sum += i;		
 		}
 		
-		return sum;
+		return sum; 
 		
 	}
 	

@@ -104,10 +104,11 @@ public class B_Continue {
 		int i=1;
 		while(i<=100) {
 			
-			if(i % 3 != 0) {
+			if(i % 3 != 0) { // 3의 배수가 아닐 경우
 				sum += i;
 				count++;
 			}
+		i++;
 			
 		}	
 			System.out.println("1에서부터 100까지의 총 합계 : " + sum + "\n1에서부터 100까지의 평균 : " + sum / count);

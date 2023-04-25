@@ -25,6 +25,7 @@ public class A_Array {
 			System.out.println(numi(x) num + i (x));
 		}
 		
+		// 출력시에도 일일히 출력해야됨 (반복문 활용 불가)
 		System.out.println(num1);
 		System.out.println(num2);
 		System.out.println(num3);
@@ -43,7 +44,7 @@ public class A_Array {
 		
 		// int a; // 변수 선언
 		//int arr[];
-		//int[] arr;
+		//int[] arr; // 선생님이 주로 쓰시는 방법
 		
 		/*
 		 * 2. 배열 할당 (몇 개의 값들을 보관할껀지 크기 지정하는 과정 => 그 갯수만큼의 방이 만들어짐)
@@ -78,7 +79,7 @@ public class A_Array {
 		*/
 		
 		for(int i=0; i<5; i++) {
-			System.out.println(arr[0]);
+			System.out.println(arr[i]);
 		}
 		
 		//System.out.println(arr); // 실제 arr에는 "주소값"이라는게 담겨있음
@@ -138,11 +139,11 @@ public class A_Array {
 		arr[4] = 5;
 		*/
 		
-		for(int i=0; i<10; i++) {
+		for(int i=0; i<5; i++) {
 			arr[i] = i + 1;
 		}
 		
-		for(int i=0; i<10; i++) {
+		for(int i=0; i<5; i++) {
 			System.out.println(arr[i]);
 		}
 		
@@ -256,7 +257,7 @@ public class A_Array {
 		// 1. 사용자에게 배열의 길이 입력받은 후
 		//    해당 그 크기만큼의 문자열 배열 생성
 		Scanner sc = new Scanner(System.in);
-		System.out.print("배열의 길이 : ");		
+		System.out.print("배열의 길이 : ");
 		int size = sc.nextInt();
 		sc.nextLine();
 		
@@ -268,11 +269,12 @@ public class A_Array {
 			System.out.print("좋아하는 과일명 입력 : ");
 			arr[i] = sc.nextLine();
 		}
+		
 		// 3. 반복문을 활용해서 각 인덱스에 담긴 값 출력
-		for(int i=0; i<arr.length; i++) { 
+		for(int i=0; i<arr.length; i++) {
 			System.out.println(arr[i]);
 		}
-			
+		
 	}
 	
 	public void method9() {
@@ -289,6 +291,7 @@ public class A_Array {
 		
 		// 2. char배열 생성해두기 (배열의 크기 == 문자열의 길이)
 		char[] arr = new char[str.length()];
+		
 		// 3. 문자열의 각 인덱스별 문자를 char배열의 각 인덱스자리에 대입
 		/*
 		 * arr[0] = str.charAt(0);
@@ -296,7 +299,7 @@ public class A_Array {
 		 * ...
 		 * arr[마지막] = str.charAt(마지막);
 		 */
-		for(int i=0; i<arr.length; i++) {
+		for(int i=0; i<str.length(); i++) {
 			arr[i] = str.charAt(i);
 		}
 		
@@ -351,7 +354,7 @@ public class A_Array {
 		//    해당 그 인덱스에 담긴 값이 홀수인 값들의 총 합 구하기
 		int sum=0;
 		for(int i=0; i<arr.length; i++) {
-			System.out.print(arr[i] + " ");
+			System.out.print(arr[i] + " "); // + " " 띄어쓰기
 			
 			if(arr[i] % 2 == 1) {
 				sum +=arr[i];

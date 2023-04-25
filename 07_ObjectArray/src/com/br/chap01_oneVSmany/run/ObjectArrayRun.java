@@ -50,10 +50,6 @@ public class ObjectArrayRun {
 		}
 	}
 	
-	
-	
-	
-	
 	// 도서 제목으로 검색하는 서비스
 	//System.out.print("검색할 책 제목 : ");
 	//String search = sc.nextLine();
@@ -69,7 +65,7 @@ public class ObjectArrayRun {
 	
 	// 만일 일치하는 도서를 찾지 못했을 경우 => "검색된 도서가 없습니다." 출력
 	
-	//   else {
+	//   else { // for문안에 넣으면 3번 출력 flag 변수이용 아래 if문 씀
 	//		System.out.println("검색된 도서가 없습니다.");
 	//	} break;
 	
@@ -77,7 +73,7 @@ public class ObjectArrayRun {
 		 System.out.println("검색된 도서가 없습니다.");
 	}
 	*/
-	// 향상된 for문으로 
+	
 	
 	
 
