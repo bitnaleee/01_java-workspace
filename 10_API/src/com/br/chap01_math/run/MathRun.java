@@ -40,7 +40,6 @@ public class MathRun {
 		 * - 생성자 아예 private으로 되어있음 => 생성 불가하도록
 		 * 
 		 * ** 한번만 메모리 영역에 올려놓고 재사용하는 개념 => 싱글톤 패턴
-		 * 
 		 */
 		
 		//Math m = new Math();

@@ -15,7 +15,7 @@ public class StringRun {
 		//a.method3();
 		
 		B_BuilderBufferTest b = new B_BuilderBufferTest();
-		b.method1();
+		//b.method1();
 		//b.method2();
 		
 		C_StringMethodTest c = new C_StringMethodTest();

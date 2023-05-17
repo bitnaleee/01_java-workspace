@@ -40,7 +40,7 @@ public class D_StringTokenizerTest {
 		*/
 		
 		/*
-		int count = stn.countTokens();// 6
+		int count = stn.countTokens(); // 6
 		for(int i=0; i<count; i++) {	// i<stn.countTokens(); 로 설정하면 출력되면서 줄어들어 3개만 출력됨 i=0 => 6, i=1 => 5, i=2 => 4, i=3 => 3 
 			System.out.println(stn.nextToken());
 		}

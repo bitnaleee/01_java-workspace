@@ -10,7 +10,6 @@ public class DateRun {
 		/*
 		 * * Date (java.util)
 		 * - 날씨 및 시간에 대한 값을 담을 수 있는 객체
-		 * 
 		 */
 		
 		// 기본생성자를 이용해서 생성
