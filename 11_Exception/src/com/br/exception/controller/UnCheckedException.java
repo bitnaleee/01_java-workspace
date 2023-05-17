@@ -18,9 +18,6 @@ public class UnCheckedException {
 	 * ...
 	 * => RuntimeException 관련된 예외들을 충분히 "예측가능함"
 	 * => 애초에 예외 자체가 발생이 안되게끔 조건문으로 해결가능 (예외처리 아님)
-	 * 
-	 * 
-	 * 
 	 */
 	
 	Scanner sc = new Scanner(System.in);

@@ -30,12 +30,12 @@ public class ExceptionRun {
 		 */
 		
 		UnCheckedException uc = new UnCheckedException();
-		//uc.method1();
+		uc.method1();
 		//uc.method2();
 		//uc.method3();
 		
 		CheckedException c = new CheckedException();
-		c.method1();
+		//c.method1();
 		
 
 	}
